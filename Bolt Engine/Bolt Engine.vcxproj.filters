@@ -16,6 +16,9 @@
     <Filter Include="src\Bolt">
       <UniqueIdentifier>{909ca99c-76d1-4bfa-93e1-fcd4434817d2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Components">
+      <UniqueIdentifier>{83e35846-93c9-4a28-bd99-34aa649c8904}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h">
@@ -33,6 +36,15 @@
     <ClInclude Include="RenderSystem.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="Components.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -40,6 +52,15 @@
     </ClCompile>
     <ClCompile Include="RenderSystem.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Components.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>src\Components</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

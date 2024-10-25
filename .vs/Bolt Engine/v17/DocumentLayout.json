@@ -1,10 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\",
+  "WorkspaceRootPath": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4FB85ED-C50E-465A-B323-36420A990528}|Bolt Engine\\Bolt Engine.vcxproj|D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\Bolt Engine\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D4FB85ED-C50E-465A-B323-36420A990528}|Bolt Engine\\Bolt Engine.vcxproj|solutionrelative:Bolt Engine\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D4FB85ED-C50E-465A-B323-36420A990528}|Bolt Engine\\Bolt Engine.vcxproj|D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\Components.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4FB85ED-C50E-465A-B323-36420A990528}|Bolt Engine\\Bolt Engine.vcxproj|solutionrelative:Bolt Engine\\Components.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4FB85ED-C50E-465A-B323-36420A990528}|Bolt Engine\\Bolt Engine.vcxproj|D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\GameObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4FB85ED-C50E-465A-B323-36420A990528}|Bolt Engine\\Bolt Engine.vcxproj|solutionrelative:Bolt Engine\\GameObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4FB85ED-C50E-465A-B323-36420A990528}|Bolt Engine\\Bolt Engine.vcxproj|D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\GameObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4FB85ED-C50E-465A-B323-36420A990528}|Bolt Engine\\Bolt Engine.vcxproj|solutionrelative:Bolt Engine\\GameObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4FB85ED-C50E-465A-B323-36420A990528}|Bolt Engine\\Bolt Engine.vcxproj|D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\Components.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4FB85ED-C50E-465A-B323-36420A990528}|Bolt Engine\\Bolt Engine.vcxproj|solutionrelative:Bolt Engine\\Components.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4FB85ED-C50E-465A-B323-36420A990528}|Bolt Engine\\Bolt Engine.vcxproj|D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4FB85ED-C50E-465A-B323-36420A990528}|Bolt Engine\\Bolt Engine.vcxproj|solutionrelative:Bolt Engine\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4FB85ED-C50E-465A-B323-36420A990528}|Bolt Engine\\Bolt Engine.vcxproj|D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\RenderSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4FB85ED-C50E-465A-B323-36420A990528}|Bolt Engine\\Bolt Engine.vcxproj|solutionrelative:Bolt Engine\\RenderSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4FB85ED-C50E-465A-B323-36420A990528}|Bolt Engine\\Bolt Engine.vcxproj|D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\RenderSystem.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4FB85ED-C50E-465A-B323-36420A990528}|Bolt Engine\\Bolt Engine.vcxproj|solutionrelative:Bolt Engine\\RenderSystem.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C626832A-286B-4166-AA39-24F5AD5B17E3}|Bolt Game Layer\\Bolt Game Layer.vcxproj|D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Game Layer\\GameLayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C626832A-286B-4166-AA39-24F5AD5B17E3}|Bolt Game Layer\\Bolt Game Layer.vcxproj|solutionrelative:Bolt Game Layer\\GameLayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4FB85ED-C50E-465A-B323-36420A990528}|Bolt Engine\\Bolt Engine.vcxproj|D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\Transform.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4FB85ED-C50E-465A-B323-36420A990528}|Bolt Engine\\Bolt Engine.vcxproj|solutionrelative:Bolt Engine\\Transform.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4FB85ED-C50E-465A-B323-36420A990528}|Bolt Engine\\Bolt Engine.vcxproj|D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\Transform.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4FB85ED-C50E-465A-B323-36420A990528}|Bolt Engine\\Bolt Engine.vcxproj|solutionrelative:Bolt Engine\\Transform.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +50,136 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Main.cpp",
-              "DocumentMoniker": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\Bolt Engine\\Main.cpp",
-              "RelativeDocumentMoniker": "Bolt Engine\\Main.cpp",
-              "ToolTip": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\Bolt Engine\\Main.cpp",
-              "RelativeToolTip": "Bolt Engine\\Main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "Transform.cpp",
+              "DocumentMoniker": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\Transform.cpp",
+              "RelativeDocumentMoniker": "Bolt Engine\\Transform.cpp",
+              "ToolTip": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\Transform.cpp",
+              "RelativeToolTip": "Bolt Engine\\Transform.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-11T13:34:03.328Z",
+              "WhenOpened": "2024-10-25T14:48:47.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Transform.h",
+              "DocumentMoniker": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\Transform.h",
+              "RelativeDocumentMoniker": "Bolt Engine\\Transform.h",
+              "ToolTip": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\Transform.h",
+              "RelativeToolTip": "Bolt Engine\\Transform.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-25T14:43:00.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Components.cpp",
+              "DocumentMoniker": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\Components.cpp",
+              "RelativeDocumentMoniker": "Bolt Engine\\Components.cpp",
+              "ToolTip": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\Components.cpp",
+              "RelativeToolTip": "Bolt Engine\\Components.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-25T14:39:03.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameObject.cpp",
+              "DocumentMoniker": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\GameObject.cpp",
+              "RelativeDocumentMoniker": "Bolt Engine\\GameObject.cpp",
+              "ToolTip": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\GameObject.cpp",
+              "RelativeToolTip": "Bolt Engine\\GameObject.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-25T13:58:41.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameObject.h",
+              "DocumentMoniker": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\GameObject.h",
+              "RelativeDocumentMoniker": "Bolt Engine\\GameObject.h",
+              "ToolTip": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\GameObject.h",
+              "RelativeToolTip": "Bolt Engine\\GameObject.h",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-25T13:58:38.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Components.h",
+              "DocumentMoniker": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\Components.h",
+              "RelativeDocumentMoniker": "Bolt Engine\\Components.h",
+              "ToolTip": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\Components.h",
+              "RelativeToolTip": "Bolt Engine\\Components.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-25T13:57:05.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GameLayer.cpp",
+              "DocumentMoniker": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Game Layer\\GameLayer.cpp",
+              "RelativeDocumentMoniker": "Bolt Game Layer\\GameLayer.cpp",
+              "ToolTip": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Game Layer\\GameLayer.cpp",
+              "RelativeToolTip": "Bolt Game Layer\\GameLayer.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-25T13:53:54.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Application.cpp",
+              "DocumentMoniker": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\Application.cpp",
+              "RelativeDocumentMoniker": "Bolt Engine\\Application.cpp",
+              "ToolTip": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\Application.cpp",
+              "RelativeToolTip": "Bolt Engine\\Application.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-25T13:40:25.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RenderSystem.h",
+              "DocumentMoniker": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\RenderSystem.h",
+              "RelativeDocumentMoniker": "Bolt Engine\\RenderSystem.h",
+              "ToolTip": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\RenderSystem.h",
+              "RelativeToolTip": "Bolt Engine\\RenderSystem.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-25T13:40:21.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RenderSystem.cpp",
+              "DocumentMoniker": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\RenderSystem.cpp",
+              "RelativeDocumentMoniker": "Bolt Engine\\RenderSystem.cpp",
+              "ToolTip": "D:\\LocalWorkDir\\2201871\\Bolt-Engine---CMP316-Game-Engine-Development-Project\\Bolt Engine\\RenderSystem.cpp",
+              "RelativeToolTip": "Bolt Engine\\RenderSystem.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-25T13:40:20.926Z",
               "EditorCaption": ""
             }
           ]

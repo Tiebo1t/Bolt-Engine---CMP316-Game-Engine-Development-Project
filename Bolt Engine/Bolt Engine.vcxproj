@@ -115,6 +115,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <OutputFile>
       </OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)Bolt Engine\libraries\SDL-main\VisualC\x64\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL3.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -138,13 +140,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Components.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Transform.cpp" />
     <ClCompile Include="RenderSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
     <ClInclude Include="Bolt.h" />
+    <ClInclude Include="Components.h" />
     <ClInclude Include="Core.h" />
     <ClInclude Include="EntryPoint.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Transform.h" />
     <ClInclude Include="RenderSystem.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
