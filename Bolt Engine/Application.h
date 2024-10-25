@@ -1,5 +1,7 @@
 #pragma once
 #include "Core.h"
+#include "RenderSystem.h"
+#include "SDL3/SDL.h"
 
 namespace Bolt
 {

@@ -1,4 +1,7 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-  Application.cpp
-  Bolt Engine.vcxproj -> C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\bin\Debug-x64\Bolt Engine\Bolt Engine.dll
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1388,5): warning MSB8012: TargetPath(C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\bin\Debug-x64\Bolt Engine\Bolt Engine.dll) does not match the Linker's OutputFile property value (). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\bin\Debug-x64\Bolt Engine\Bolt Engine.lib and object C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\bin\Debug-x64\Bolt Engine\Bolt Engine.exp
+Application.obj : error LNK2019: unresolved external symbol SDL_CreateWindow referenced in function "public: void __cdecl Bolt::Application::Run(void)" (?Run@Application@Bolt@@QEAAXXZ)
+RenderSystem.obj : error LNK2001: unresolved external symbol SDL_CreateWindow
+Application.dll : fatal error LNK1120: 1 unresolved externals
