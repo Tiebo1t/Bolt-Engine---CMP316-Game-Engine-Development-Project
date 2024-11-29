@@ -1,11 +1,18 @@
 #pragma once
 #include "Components.h"
 
-class Transform : public Components
+namespace Bolt
 {
 
-	void Start();
-	void Update();
+	class Transform : public Components
+	{
 
-};
+		void Start();
+		void Update();
+
+	};
+
+}
+
+
 

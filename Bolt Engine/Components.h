@@ -1,10 +1,17 @@
 #pragma once
 #include "GameObject.h"
 
-class Components /*: public GameObject*/
+namespace Bolt
 {
 
-	void Update();
+	class Components //: public GameObject
+	{
+	public:
+		void Update();
 
-};
+	};
+
+
+}
+
 

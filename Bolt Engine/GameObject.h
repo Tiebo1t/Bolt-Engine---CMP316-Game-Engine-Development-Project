@@ -4,41 +4,48 @@
 
 // https://stackoverflow.com/questions/26851958/component-based-architecture-c - look at
 
-class GameObject
+namespace Bolt
 {
 
-	//std::vector<Components*> comps;
+	class GameObject
+	{
 
-	//template <class T>
-	//const T* AddComponent()
-	//{
+		//std::vector<Components*> comps;
 
-	//	T* component = new T();
-	//	comps.push_back(T);
-	//	return();
+		//template <class T>
+		//const T* AddComponent()
+		//{
 
-	//}
+		//	T* component = new T();
+		//	comps.push_back(T);
+		//	return();
 
-	//template <class T>
-	//T* const GetComponent()
-	//{
+		//}
 
-	//	const type_info& tInfo = typeid(T);
-	//	for (auto& c : comps)
-	//	{
+		//template <class T>
+		//T* const GetComponent()
+		//{
 
-	//		const type_info& cInfo = typeid(*c);
-	//		if (cInfo == tInfo)
-	//		{
+		//	const type_info& tInfo = typeid(T);
+		//	for (auto& c : comps)
+		//	{
 
-	//			return static_cast<T*>(c.get());
+		//		const type_info& cInfo = typeid(*c);
+		//		if (cInfo == tInfo)
+		//		{
 
-	//		}
-	//		return nullptr;
-	//	}
+		//			return static_cast<T*>(c.get());
 
-	//}
+		//		}
+		//		return nullptr;
+		//	}
+
+		//}
 
 
-};
+	};
+
+}
+
+
 

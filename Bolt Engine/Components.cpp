@@ -1,5 +1,5 @@
 #include "Components.h"
 
-void Components::Update()
+void Bolt::Components::Update()
 {
 }

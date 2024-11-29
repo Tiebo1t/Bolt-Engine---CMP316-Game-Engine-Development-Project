@@ -16,10 +16,17 @@ namespace Bolt
 	{
 		std::cout << "hi";
 
-		SDL_CreateWindow("Window", 600, 800, 0);
+		std::cout << "yes";
+
+		renderSystem->createWindow();
 
 		while (true);
 
+	}
+
+	void Application::Render()
+	{
+		
 	}
 
 }

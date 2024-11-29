@@ -1,10 +1,10 @@
 
 #include "Transform.h"
 
-void Transform::Start()
+void Bolt::Transform::Start()
 {
 }
 
-void Transform::Update()
+void Bolt::Transform::Update()
 {
 }
