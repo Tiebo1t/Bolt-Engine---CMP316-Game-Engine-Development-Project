@@ -45,6 +45,9 @@
     <ClInclude Include="Transform.h">
       <Filter>src\Components</Filter>
     </ClInclude>
+    <ClInclude Include="StackAllocator.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -61,6 +64,9 @@
     </ClCompile>
     <ClCompile Include="Transform.cpp">
       <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="StackAllocator.cpp">
+      <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
