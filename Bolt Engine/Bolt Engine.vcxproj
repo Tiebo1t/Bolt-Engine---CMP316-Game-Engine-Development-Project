@@ -144,6 +144,7 @@
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="Components.cpp" />
     <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="StackAllocator.cpp" />
     <ClCompile Include="Transform.cpp" />
     <ClCompile Include="RenderSystem.cpp" />
@@ -155,6 +156,7 @@
     <ClInclude Include="Core.h" />
     <ClInclude Include="EntryPoint.h" />
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="StackAllocator.h" />
     <ClInclude Include="Transform.h" />
     <ClInclude Include="RenderSystem.h" />
