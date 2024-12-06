@@ -73,6 +73,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)bin\$(Configuration)-$(Platform)\$(ProjectName)</OutDir>
     <IntDir>$(SolutionDir)bin-int\$(Configuration)-$(Platform)\$(ProjectName)</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -114,9 +115,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <OutputFile>
-      </OutputFile>
-      <AdditionalLibraryDirectories>$(SolutionDir)Bolt Engine\libraries\SDL-main\VisualC\x64\Debug</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)Bolt Engine\libraries\SDL-main\VisualC\x64\Debug;$(SolutionDir)Bolt Engine\libraries\SDL-main\VisualC</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL3.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>

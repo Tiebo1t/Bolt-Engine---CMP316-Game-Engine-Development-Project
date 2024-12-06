@@ -14,8 +14,8 @@ namespace Bolt
 		void createWindow();
 
 	private:
-		int screenX = 5000;
-		int screenY = 5000;
+		int screenX = 1280;
+		int screenY = 720;
 
 		SDL_Renderer* renderer;
 		SDL_Window* mainWindow;

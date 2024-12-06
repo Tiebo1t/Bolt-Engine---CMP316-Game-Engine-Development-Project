@@ -1,11 +1,13 @@
 #include "Application.h"
 #include <iostream>
+#include "RenderSystem.h"
 
 namespace Bolt
 {
 
-	Application::Application()
+	Application::Application():renderSystem{new RenderSystem()}
 	{
+		std::cout << "construct";
 	}
 
 	Application::~Application()
@@ -18,6 +20,7 @@ namespace Bolt
 
 		std::cout << "yes";
 
+		//renderSystem = new RenderSystem();
 		renderSystem->createWindow();
 
 		while (true);

@@ -1,21 +1,23 @@
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\vc143.pdb
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\vc143.idb
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\rendersystem.obj
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\transform.obj
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\gameobject.obj
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\components.obj
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\application.obj
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\bolt engine.ilk
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bin\debug-x64\bolt engine\bolt engine.pdb
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bolt engine\application.dll
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bin\debug-x64\bolt engine\bolt engine.lib
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bin\debug-x64\bolt engine\bolt engine.exp
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\bolt engine.vcxproj.filelistabsolute.txt
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\bolt engine.tlog\cl.command.1.tlog
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\bolt engine.tlog\cl.items.tlog
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\bolt engine.tlog\cl.read.1.tlog
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\bolt engine.tlog\cl.write.1.tlog
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\bolt engine.tlog\link.command.1.tlog
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\bolt engine.tlog\link.read.1.tlog
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\bolt engine.tlog\link.write.1.tlog
-c:\users\thoma\documents\uni\year 3\cmp316\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\bolt engine.tlog\link.write.2u.tlog
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\vc143.pdb
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\vc143.idb
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\rendersystem.obj
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\transform.obj
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\stackallocator.obj
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\resourcemanager.obj
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\gameobject.obj
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\components.obj
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\application.obj
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin\debug-x64\bolt engine\bolt engine.dll
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin\debug-x64\bolt engine\bolt engine.pdb
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin\debug-x64\bolt engine\bolt engine.lib
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin\debug-x64\bolt engine\bolt engine.exp
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\bolt engine.ilk
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\bolt engine.vcxproj.filelistabsolute.txt
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\bolt engine.tlog\cl.command.1.tlog
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\bolt engine.tlog\cl.items.tlog
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\bolt engine.tlog\cl.read.1.tlog
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\bolt engine.tlog\cl.write.1.tlog
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\bolt engine.tlog\link.command.1.tlog
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\bolt engine.tlog\link.read.1.tlog
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\bolt engine.tlog\link.secondary.1.tlog
+d:\localworkdir\2201871\bolt-engine---cmp316-game-engine-development-project\bin-int\debug-x64\bolt engine\bolt engine.tlog\link.write.1.tlog

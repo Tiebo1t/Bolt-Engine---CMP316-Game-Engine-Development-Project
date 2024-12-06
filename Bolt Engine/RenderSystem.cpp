@@ -2,7 +2,7 @@
 
 Bolt::RenderSystem::RenderSystem()
 {
-
+	std::cout << "Construct";
 }
 
 Bolt::RenderSystem::~RenderSystem()
