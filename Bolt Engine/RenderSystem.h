@@ -12,7 +12,7 @@ namespace Bolt
 		~RenderSystem();
 
 		void createWindow();
-
+		void Render();
 	private:
 		int screenX = 1280;
 		int screenY = 720;

@@ -16,20 +16,19 @@ namespace Bolt
 
 	void Application::Run()
 	{
-		std::cout << "hi";
-
-		std::cout << "yes";
 
 		//renderSystem = new RenderSystem();
 		renderSystem->createWindow();
 
-		while (true);
+		while (true) {
+			Render();
+		}
 
 	}
 
 	void Application::Render()
 	{
-		
+		renderSystem->Render();
 	}
 
 }
