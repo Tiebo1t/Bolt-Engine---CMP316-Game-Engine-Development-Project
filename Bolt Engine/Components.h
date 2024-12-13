@@ -7,6 +7,8 @@ namespace Bolt
 	class Components //: public GameObject
 	{
 	public:
+		Components();
+		~Components();
 		void Update();
 
 	};

@@ -5,6 +5,11 @@ Bolt::RenderSystem::RenderSystem()
 	std::cout << "Construct";
 
 	rect = new SDL_FRect();
+
+	rect->w = 100;
+	rect->h = 100;
+	rect->y = 0;
+	rect->x = 0;
 }
 
 Bolt::RenderSystem::~RenderSystem()
@@ -29,13 +34,6 @@ void Bolt::RenderSystem::Render()
 {
 
 	SDL_RenderClear(renderer);
-
-	std::cout << "Render\n";
-
-	rect->w = 100;
-	rect->h = 100;
-	rect->y = 0;
-	rect->x = 0;
 
 	SDL_RenderRect(renderer, rect);
 
