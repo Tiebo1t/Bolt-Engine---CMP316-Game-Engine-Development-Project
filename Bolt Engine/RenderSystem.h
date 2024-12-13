@@ -19,5 +19,6 @@ namespace Bolt
 
 		SDL_Renderer* renderer;
 		SDL_Window* mainWindow;
+		SDL_FRect* rect;
 	};
 }
