@@ -19,6 +19,9 @@
     <Filter Include="src\Components">
       <UniqueIdentifier>{83e35846-93c9-4a28-bd99-34aa649c8904}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Objects">
+      <UniqueIdentifier>{768e4c59-198f-486c-97f2-dc7d56e3ac47}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h">
@@ -51,6 +54,9 @@
     <ClInclude Include="ResourceManager.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="TexturedRectangle.h">
+      <Filter>src\Objects</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -73,6 +79,9 @@
     </ClCompile>
     <ClCompile Include="ResourceManager.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="TexturedRectangle.cpp">
+      <Filter>src\Objects</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

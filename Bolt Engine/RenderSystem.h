@@ -1,6 +1,7 @@
 #pragma once
 #include "SDL3/SDL.h"
 #include <iostream>
+#include "TexturedRectangle.h"
 
 namespace Bolt
 {
@@ -20,5 +21,6 @@ namespace Bolt
 		SDL_Renderer* renderer;
 		SDL_Window* mainWindow;
 		SDL_FRect* rect;
+		TexturedRectangle* texturedRect;
 	};
 }

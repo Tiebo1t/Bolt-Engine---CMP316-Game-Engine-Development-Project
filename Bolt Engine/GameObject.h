@@ -9,61 +9,61 @@
 namespace Bolt
 {
 
-	class GameObject : public Components
+	class GameObject //: public Components
 	{
-		GameObject();
-		~GameObject();
+	//	GameObject();
+	//	~GameObject();
 
-		StackAllocator* stackAlloc = new StackAllocator(256);
+	//	StackAllocator* stackAlloc = new StackAllocator(256);
 
-		template <class T>
-		const T* AddComponent()
-		{
+	//	template <class T>
+	//	const T* AddComponent()
+	//	{
 
-			T* rp = new(stackAlloc->Alloc(sizeof(T))) T(this);
-			stackAlloc->DeAlloc(sizeof(T));
+	//		T* rp = new(stackAlloc->Alloc(sizeof(T))) T(this);
+	//		stackAlloc->DeAlloc(sizeof(T));
 
-			std::unique_ptr<T> component;
-			component.reset(rp);
+	//		std::unique_ptr<T> component;
+	//		component.reset(rp);
 
-			comps.push_back(std::move(component));
-			return(rp);
+	//		comps.push_back(std::move(component));
+	//		return(rp);
 
-		}
+	//	}
 
-		template <class T>
-		T* AddComponent(T*&& cPointer)
-		{
+	//	template <class T>
+	//	T* AddComponent(T*&& cPointer)
+	//	{
 
-			std::unique_ptr<T> component(std::move(cPointer));
-			T* rp = component.get();
-			comps.push_back(std::move(component));
-			return(rp);
+	//		std::unique_ptr<T> component(std::move(cPointer));
+	//		T* rp = component.get();
+	//		comps.push_back(std::move(component));
+	//		return(rp);
 
-		}
+	//	}
 
-		template <class T>
-		T* const GetComponent()
-		{
+	//	template <class T>
+	//	T* const GetComponent()
+	//	{
 
-			const type_info& tInfo = typeid(T);
-			for (auto& c : comps)
-			{
+	//		const type_info& tInfo = typeid(T);
+	//		for (auto& c : comps)
+	//		{
 
-				const type_info& cInfo = typeid(*c);
-				if (cInfo == tInfo)
-				{
+	//			const type_info& cInfo = typeid(*c);
+	//			if (cInfo == tInfo)
+	//			{
 
-					return static_cast<T*>(c.get());
+	//				return static_cast<T*>(c.get());
 
-				}
-				return nullptr;
-			}
+	//			}
+	//			return nullptr;
+	//		}
 
-		}
+	//	}
 
-	private:
-		std::vector<Components*> comps;
+	//private:
+	//	std::vector<Components*> comps;
 
 
 	};
