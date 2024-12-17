@@ -8,6 +8,7 @@ namespace Bolt
 	Application::Application():renderSystem{new RenderSystem()}
 	{
 		std::cout << "construct";
+		renderSystem = new RenderSystem();
 	}
 
 	Application::~Application()
@@ -17,7 +18,6 @@ namespace Bolt
 	void Application::Run()
 	{
 
-		//renderSystem = new RenderSystem();
 		renderSystem->createWindow();
 
 		while (true) {

@@ -21,6 +21,8 @@ namespace Bolt
 		SDL_Renderer* renderer;
 		SDL_Window* mainWindow;
 		SDL_FRect* rect;
+		SDL_Surface* screen;
+		SDL_Surface* image;
 		TexturedRectangle* texturedRect;
 	};
 }

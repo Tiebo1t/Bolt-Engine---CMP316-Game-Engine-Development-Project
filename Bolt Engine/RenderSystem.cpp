@@ -4,8 +4,9 @@ Bolt::RenderSystem::RenderSystem()
 {
 	std::cout << "Construct";
 
-	TexturedRectangle* texturedRect = new TexturedRectangle(renderer, "./images/good.bmp");
+	texturedRect = new TexturedRectangle(renderer, "./images/good.bmp");
 	texturedRect->setRectangleProperties(100, 100, 0, 0);
+	rect = new SDL_FRect();
 
 	//rect = new SDL_FRect();
 
@@ -38,12 +39,20 @@ void Bolt::RenderSystem::Render()
 
 	SDL_RenderClear(renderer);
 
-	//SDL_RenderRect(renderer, texturedRect);
+	//SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+	//SDL_RenderPoint(renderer, 1280 / 2, 720 / 2);
 
-	texturedRect->render(renderer);
+	//SDL_RenderRect(renderer, rect);
 
-	SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
-	SDL_RenderPoint(renderer, 1280 / 2, 720 / 2);
+	image = SDL_LoadBMP("./images/good.bmp"); // Wont load image 
+
+	SDL_BlitSurface(image, NULL, screen, NULL);
+
+	screen = SDL_GetWindowSurface(mainWindow);
+	SDL_DestroySurface(image);
+	SDL_UpdateWindowSurface(mainWindow);
+
+	//texturedRect->render(renderer);
 	
 	SDL_RenderPresent(renderer);
 	

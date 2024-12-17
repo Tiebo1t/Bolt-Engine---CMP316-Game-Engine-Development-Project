@@ -7,7 +7,7 @@ Bolt::TexturedRectangle::TexturedRectangle(SDL_Renderer*& renderer, std::string 
 	SDL_Surface* retrievedSurface = ResourceManager::getInstance().getSurface("./images/good.bmp");
 	//SDL_Surface* surface = SDL_LoadBMP(filepath.c_str());
 	tex = SDL_CreateTextureFromSurface(renderer, retrievedSurface);
-	SDL_FRect* rect = new SDL_FRect();
+	rect = new SDL_FRect();
 }
 
 Bolt::TexturedRectangle::~TexturedRectangle()
@@ -17,10 +17,10 @@ Bolt::TexturedRectangle::~TexturedRectangle()
 
 void Bolt::TexturedRectangle::setRectangleProperties(int x, int y, int w, int h)
 {
-	rect->x = x;
-	rect->y = y;
 	rect->w = w;
 	rect->h = h;
+	rect->x = x;
+	rect->y = y;
 }
 
 void Bolt::TexturedRectangle::update()
