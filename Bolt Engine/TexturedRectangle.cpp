@@ -4,7 +4,7 @@
 Bolt::TexturedRectangle::TexturedRectangle(SDL_Renderer*& renderer, std::string filepath)
 {
 	// Need to consider when to give up ownership of resources
-	SDL_Surface* retrievedSurface = ResourceManager::getInstance().getSurface("./images/good.bmp");
+	SDL_Surface* retrievedSurface = ResourceManager::getInstance().getSurface("images/good.bmp");
 	//SDL_Surface* surface = SDL_LoadBMP(filepath.c_str());
 	tex = SDL_CreateTextureFromSurface(renderer, retrievedSurface);
 	rect = new SDL_FRect();

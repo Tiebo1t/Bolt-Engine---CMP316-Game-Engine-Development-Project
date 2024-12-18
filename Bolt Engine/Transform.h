@@ -4,7 +4,7 @@
 namespace Bolt
 {
 
-	class Transform : public Components
+	class Transform : public Components // Pass in parameters to initialise and SDL rectangle as an object 
 	{
 
 		void Start();
@@ -13,6 +13,3 @@ namespace Bolt
 	};
 
 }
-
-
-

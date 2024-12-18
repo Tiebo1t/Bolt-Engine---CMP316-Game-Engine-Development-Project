@@ -9,62 +9,64 @@
 namespace Bolt
 {
 
-	class GameObject //: public Components
+	class GameObject : public Components
 	{
-	//	GameObject();
-	//	~GameObject();
 
-	//	StackAllocator* stackAlloc = new StackAllocator(256);
 
-	//	template <class T>
-	//	const T* AddComponent()
-	//	{
+	private:
+		std::vector<Components*> comps;
 
-	//		T* rp = new(stackAlloc->Alloc(sizeof(T))) T(this);
-	//		stackAlloc->DeAlloc(sizeof(T));
+	public:
+		GameObject();
+		~GameObject();
 
-	//		std::unique_ptr<T> component;
-	//		component.reset(rp);
+		StackAllocator* stackAlloc = new StackAllocator(256);
 
-	//		comps.push_back(std::move(component));
-	//		return(rp);
+		template <class T>
+		const T* AddComponent()
+		{
 
-	//	}
+			T* rp = new(stackAlloc->Alloc(sizeof(T))) T(this);
+			stackAlloc->DeAlloc(sizeof(T));
 
-	//	template <class T>
-	//	T* AddComponent(T*&& cPointer)
-	//	{
+			std::unique_ptr<T> component;
+			component.reset(rp);
 
-	//		std::unique_ptr<T> component(std::move(cPointer));
-	//		T* rp = component.get();
-	//		comps.push_back(std::move(component));
-	//		return(rp);
+			comps.push_back(std::move(component));
+			return(rp);
 
-	//	}
+		}
 
-	//	template <class T>
-	//	T* const GetComponent()
-	//	{
+		template <class T>
+		T* AddComponent(T*&& cPointer)
+		{
 
-	//		const type_info& tInfo = typeid(T);
-	//		for (auto& c : comps)
-	//		{
+			std::unique_ptr<T> component(std::move(cPointer));
+			T* rp = component.get();
+			comps.push_back(std::move(component));
+			return(rp);
 
-	//			const type_info& cInfo = typeid(*c);
-	//			if (cInfo == tInfo)
-	//			{
+		}
 
-	//				return static_cast<T*>(c.get());
+		template <class T>
+		T* const GetComponent()
+		{
 
-	//			}
-	//			return nullptr;
-	//		}
+			const type_info& tInfo = typeid(T);
+			for (auto& c : comps)
+			{
 
-	//	}
+				const type_info& cInfo = typeid(*c);
+				if (cInfo == tInfo)
+				{
 
-	//private:
-	//	std::vector<Components*> comps;
+					return static_cast<T*>(c.get());
 
+				}
+				return nullptr;
+			}
+
+		}
 
 	};
 

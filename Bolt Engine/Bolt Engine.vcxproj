@@ -149,6 +149,7 @@
     <ClCompile Include="TexturedRectangle.cpp" />
     <ClCompile Include="Transform.cpp" />
     <ClCompile Include="RenderSystem.cpp" />
+    <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
@@ -162,6 +163,7 @@
     <ClInclude Include="TexturedRectangle.h" />
     <ClInclude Include="Transform.h" />
     <ClInclude Include="RenderSystem.h" />
+    <ClInclude Include="World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
