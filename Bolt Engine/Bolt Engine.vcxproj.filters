@@ -60,6 +60,9 @@
     <ClInclude Include="World.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="DeltaTime.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -87,6 +90,9 @@
       <Filter>src\Objects</Filter>
     </ClCompile>
     <ClCompile Include="World.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="DeltaTime.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>

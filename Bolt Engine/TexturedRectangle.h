@@ -12,7 +12,6 @@ namespace Bolt
 		~TexturedRectangle();
 
 		void setRectangleProperties(int x, int y, int w, int h);
-		void update();
 		void render(SDL_Renderer*& renderer);
 	private:
 		SDL_Texture* tex;

@@ -2,6 +2,7 @@
 #include "SDL3/SDL.h"
 #include <iostream>
 #include "TexturedRectangle.h"
+#include "DeltaTime.h"
 
 namespace Bolt
 {
@@ -24,5 +25,8 @@ namespace Bolt
 		SDL_Surface* screen;
 		SDL_Surface* image;
 		TexturedRectangle* texturedRect;
+		TexturedRectangle* texturedRect2;
+		TexturedRectangle* texturedRect3;
+		DeltaTime* deltaTime;
 	};
 }

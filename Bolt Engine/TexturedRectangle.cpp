@@ -22,10 +22,6 @@ void Bolt::TexturedRectangle::setRectangleProperties(int x, int y, int w, int h)
 	rect->y = y;
 }
 
-void Bolt::TexturedRectangle::update()
-{
-}
-
 void Bolt::TexturedRectangle::render(SDL_Renderer*& renderer)
 {
 	SDL_RenderRect(renderer, rect);
