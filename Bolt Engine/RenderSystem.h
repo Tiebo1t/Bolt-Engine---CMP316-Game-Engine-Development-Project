@@ -24,6 +24,7 @@ namespace Bolt
 		SDL_FRect* rect;
 		SDL_Surface* screen;
 		SDL_Surface* image;
+		SDL_Texture* texture;
 		TexturedRectangle* texturedRect;
 		TexturedRectangle* texturedRect2;
 		TexturedRectangle* texturedRect3;
