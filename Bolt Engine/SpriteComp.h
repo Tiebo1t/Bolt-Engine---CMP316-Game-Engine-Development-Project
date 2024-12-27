@@ -10,8 +10,8 @@ namespace Bolt
 		SpriteComp();
 		~SpriteComp();
 		void Start();
-		void Render();
 		void Update();
+		void Render();
 
 	private:
 

@@ -10,6 +10,8 @@ namespace Bolt
 	public:
 		World();
 		~World();
+		void Render();
+		void Update();
 		void AddGameObject(GameObject* go);
 		GameObject* CreateNewGameObject();
 

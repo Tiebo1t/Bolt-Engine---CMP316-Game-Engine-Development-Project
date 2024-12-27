@@ -3,13 +3,15 @@
 namespace Bolt
 {
 
+	class GameObject;
 	class Components
 	{
 	public:
 		Components();
-		~Components();
-		void Start();
-		void Update();
+		virtual ~Components();
+		virtual void Start();
+		virtual void Update();
+		virtual void Render();
 
 	};
 

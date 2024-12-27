@@ -15,6 +15,7 @@ namespace Bolt
 
 		void createWindow();
 		void Render();
+		void Draw();
 	private:
 		int screenX = 1280;
 		int screenY = 720;
