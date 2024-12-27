@@ -40,16 +40,18 @@ void Bolt::RenderSystem::Render()
 
 	deltaTime->update();
 
-	std::cout << deltaTime->getDeltaTime() << std::endl; // Delta time may not work properly yet
+	std::cout << deltaTime->getDeltaTime() << std::endl; // Delta time may not work properly yet, should be handled elsewhere
+
+	// ------------------------------------- loop over all gameobjects with a sprite component and render them
 
 	//SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
 	SDL_RenderClear(renderer);
 
-	texturedRect->render(renderer);
+	texturedRect->Render(renderer);
 
-	texturedRect2->render(renderer);
+	texturedRect2->Render(renderer);
 
-	texturedRect3->render(renderer);
+	texturedRect3->Render(renderer);
 
 	//SDL_RenderFillRect(renderer, rect);
 

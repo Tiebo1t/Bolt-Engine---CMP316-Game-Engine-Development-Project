@@ -146,9 +146,10 @@
     <ClCompile Include="DeltaTime.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="SpriteComp.cpp" />
     <ClCompile Include="StackAllocator.cpp" />
     <ClCompile Include="TexturedRectangle.cpp" />
-    <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="TransformComp.cpp" />
     <ClCompile Include="RenderSystem.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
@@ -161,9 +162,10 @@
     <ClInclude Include="EntryPoint.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="SpriteComp.h" />
     <ClInclude Include="StackAllocator.h" />
     <ClInclude Include="TexturedRectangle.h" />
-    <ClInclude Include="Transform.h" />
+    <ClInclude Include="TransformComp.h" />
     <ClInclude Include="RenderSystem.h" />
     <ClInclude Include="World.h" />
   </ItemGroup>

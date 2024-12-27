@@ -8,6 +8,7 @@ namespace Bolt
 	public:
 		Components();
 		~Components();
+		void Start();
 		void Update();
 
 	};

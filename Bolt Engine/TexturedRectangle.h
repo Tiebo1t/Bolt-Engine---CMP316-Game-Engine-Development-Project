@@ -12,7 +12,7 @@ namespace Bolt
 		~TexturedRectangle();
 
 		void setRectangleProperties(int x, int y, int w, int h);
-		void render(SDL_Renderer*& renderer);
+		void Render(SDL_Renderer*& renderer);
 	private:
 		SDL_Texture* tex;
 		SDL_FRect* rect;

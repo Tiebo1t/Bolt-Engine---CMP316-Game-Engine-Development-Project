@@ -1,5 +1,5 @@
 #pragma once
-#include "Components.h"
+//#include "Components.h"
 #include "StackAllocator.h"
 #include <vector>
 #include <memory>
@@ -8,17 +8,16 @@
 
 namespace Bolt
 {
-
-	class GameObject : public Components
+	class Components;
+	class GameObject 
 	{
-
-
 	private:
 		std::vector<Components*> comps;
 
 	public:
 		GameObject();
 		~GameObject();
+		void Update();
 
 		StackAllocator* stackAlloc = new StackAllocator(256);
 

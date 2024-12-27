@@ -8,6 +8,10 @@ Bolt::Components::~Components()
 {
 }
 
+void Bolt::Components::Start()
+{
+}
+
 void Bolt::Components::Update()
 {
 }

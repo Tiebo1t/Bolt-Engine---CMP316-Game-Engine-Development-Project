@@ -1,5 +1,4 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-  LINK : C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\bin\Debug-x64\Bolt Engine\Bolt Engine.dll not found or not built by the last incremental link; performing full link
-     Creating library C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\bin\Debug-x64\Bolt Engine\Bolt Engine.lib and object C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\bin\Debug-x64\Bolt Engine\Bolt Engine.exp
+  Application.cpp
   Bolt Engine.vcxproj -> C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\bin\Debug-x64\Bolt Engine\Bolt Engine.dll

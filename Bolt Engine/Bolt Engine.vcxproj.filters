@@ -45,7 +45,7 @@
     <ClInclude Include="GameObject.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="Transform.h">
+    <ClInclude Include="TransformComp.h">
       <Filter>src\Components</Filter>
     </ClInclude>
     <ClInclude Include="StackAllocator.h">
@@ -63,6 +63,9 @@
     <ClInclude Include="DeltaTime.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="SpriteComp.h">
+      <Filter>src\Components</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -77,7 +80,7 @@
     <ClCompile Include="GameObject.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="Transform.cpp">
+    <ClCompile Include="TransformComp.cpp">
       <Filter>src\Components</Filter>
     </ClCompile>
     <ClCompile Include="StackAllocator.cpp">
@@ -94,6 +97,9 @@
     </ClCompile>
     <ClCompile Include="DeltaTime.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteComp.cpp">
+      <Filter>src\Components</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

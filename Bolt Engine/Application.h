@@ -9,6 +9,8 @@ namespace Bolt
 	{
 	private:
 		RenderSystem* renderSystem;
+		SDL_Event event;
+		bool running;
 
 	public:
 		Application();
