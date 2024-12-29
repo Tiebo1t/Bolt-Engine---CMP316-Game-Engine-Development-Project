@@ -1,6 +1,6 @@
 #include "TransformComp.h"
 
-Bolt::TransformComp::TransformComp()
+Bolt::TransformComp::TransformComp(GameObject* owner) : Components{owner}
 {
 }
 

@@ -1,6 +1,6 @@
 #include "Components.h"
 
-Bolt::Components::Components()
+Bolt::Components::Components(GameObject* owner) : gameObject{owner}
 {
 }
 

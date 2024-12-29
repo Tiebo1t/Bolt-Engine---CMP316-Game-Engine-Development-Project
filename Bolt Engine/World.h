@@ -10,6 +10,7 @@ namespace Bolt
 	public:
 		World();
 		~World();
+		void Load();
 		void Render();
 		void Update();
 		void AddGameObject(GameObject* go);
@@ -17,6 +18,7 @@ namespace Bolt
 
 	private:
 		std::vector<GameObject*> gameObjects;
+		GameObject* character;
 	};
 
 }

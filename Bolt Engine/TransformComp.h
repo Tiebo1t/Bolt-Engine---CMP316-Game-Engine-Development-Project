@@ -6,7 +6,7 @@ namespace Bolt
 
 	class TransformComp : public Components // Pass in parameters to initialise and SDL rectangle as an object 
 	{
-		TransformComp();
+		TransformComp(GameObject* owner);
 		~TransformComp();
 		void Start();
 		void Update();

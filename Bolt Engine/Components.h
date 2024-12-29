@@ -7,12 +7,14 @@ namespace Bolt
 	class Components
 	{
 	public:
-		Components();
+		Components(GameObject* owner);
 		virtual ~Components();
 		virtual void Start();
 		virtual void Update();
 		virtual void Render();
 
+	private:
+		GameObject* gameObject;
 	};
 
 

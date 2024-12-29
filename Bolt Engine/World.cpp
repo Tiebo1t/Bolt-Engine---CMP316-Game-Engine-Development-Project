@@ -8,9 +8,21 @@ Bolt::World::~World()
 {
 }
 
+void Bolt::World::Load()
+{
+	character = CreateNewGameObject();
+	character->AddComponent<SpriteComp>();
+}
+
 void Bolt::World::Render()
 {
 	// Render all game objects with sprite components
+	for (auto& GO : gameObjects) {
+		SpriteComp* sprite = GO->GetComponent<SpriteComp>();
+		if (sprite != nullptr) {
+			sprite->Render();
+		}
+	}
 }
 
 void Bolt::World::Update()

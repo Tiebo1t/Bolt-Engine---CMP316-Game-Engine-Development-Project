@@ -1,5 +1,5 @@
 #pragma once
-//#include "Components.h"
+#include "Components.h"
 #include "StackAllocator.h"
 #include <vector>
 #include <memory>
@@ -8,7 +8,7 @@
 
 namespace Bolt
 {
-	class Components;
+	//class Components;
 	class GameObject 
 	{
 
@@ -16,14 +16,13 @@ namespace Bolt
 		GameObject();
 		~GameObject();
 
-		StackAllocator* stackAlloc = new StackAllocator(256);
+		StackAllocator* stackAlloc = new StackAllocator(5000);
 
 		template <class T>
-		const T* AddComponent()
+		T* AddComponent() // const
 		{
 
 			T* rp = new(stackAlloc->Alloc(sizeof(T))) T(this);
-			stackAlloc->DeAlloc(sizeof(T));
 
 			std::unique_ptr<T> component;
 			component.reset(rp);

@@ -19,7 +19,6 @@ namespace Bolt
 			return *instance;
 		}
 
-		static RenderSystem& getInstance();
 		void createWindow();
 		void Render();
 		void Draw(TexturedRectangle* sprite);
