@@ -3,7 +3,8 @@
 
 Bolt::SpriteComp::SpriteComp(GameObject* owner) : Components{ owner }
 {
-	sprite = new TexturedRectangle(renderer, "images/good.bmp");
+	sprite = new TexturedRectangle(renderer, "images/good.bmp"); // Image not loaded
+	sprite->setRectangleProperties(1280 / 2, 720 / 2, 50, 50);
 }
 
 Bolt::SpriteComp::~SpriteComp()
@@ -12,7 +13,6 @@ Bolt::SpriteComp::~SpriteComp()
 
 void Bolt::SpriteComp::Start()
 {
-	sprite->setRectangleProperties(1280 / 2, 720 / 2, 50, 50);
 	// Create an instance of textured rectangle
 }
 

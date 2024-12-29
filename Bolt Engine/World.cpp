@@ -28,6 +28,9 @@ void Bolt::World::Render()
 void Bolt::World::Update()
 {
 	// Update all game objects
+	for (auto& GO : gameObjects) {
+		GO->Update();
+	}
 }
 
 void Bolt::World::AddGameObject(GameObject* gameObject)

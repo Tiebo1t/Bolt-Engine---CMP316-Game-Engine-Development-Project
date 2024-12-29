@@ -1,6 +1,7 @@
 #pragma once
 #include "Core.h"
 #include "SDL3/SDL.h"
+#include "World.h"
 
 namespace Bolt
 {
@@ -9,6 +10,7 @@ namespace Bolt
 	{
 	private:
 		RenderSystem* renderSystem;
+		std::unique_ptr<World> world;
 		SDL_Event event;
 		bool running;
 

@@ -142,7 +142,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
-    <ClCompile Include="Character.cpp" />
     <ClCompile Include="Components.cpp" />
     <ClCompile Include="DeltaTime.cpp" />
     <ClCompile Include="GameObject.cpp" />
@@ -157,7 +156,6 @@
   <ItemGroup>
     <ClInclude Include="Application.h" />
     <ClInclude Include="Bolt.h" />
-    <ClInclude Include="Character.h" />
     <ClInclude Include="Components.h" />
     <ClInclude Include="Core.h" />
     <ClInclude Include="DeltaTime.h" />
