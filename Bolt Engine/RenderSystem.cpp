@@ -45,11 +45,11 @@ void Bolt::RenderSystem::Render()
 	//SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
 	SDL_RenderClear(renderer);
 
-	texturedRect->Render(renderer);
+	//texturedRect->Render(renderer);
 
-	texturedRect2->Render(renderer);
+	//texturedRect2->Render(renderer);
 
-	texturedRect3->Render(renderer);
+	//texturedRect3->Render(renderer);
 
 	//SDL_RenderFillRect(renderer, rect);
 
@@ -64,6 +64,7 @@ void Bolt::RenderSystem::Render()
 	
 }
 
-void Bolt::RenderSystem::Draw() // To be used to render all sprite components
+void Bolt::RenderSystem::Draw(TexturedRectangle* sprite) // To be used to render all sprite components
 {
+	sprite->Render(renderer);
 }

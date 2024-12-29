@@ -20,7 +20,7 @@ void Bolt::World::Update()
 
 void Bolt::World::AddGameObject(GameObject* gameObject)
 {
-	gameObjects.push_back(gameObject); // ----------------- Dont think will work yet
+	gameObjects.push_back(gameObject);
 }
 
 Bolt::GameObject* Bolt::World::CreateNewGameObject()

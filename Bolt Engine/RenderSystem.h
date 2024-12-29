@@ -13,9 +13,16 @@ namespace Bolt
 		RenderSystem();
 		~RenderSystem();
 
+		static RenderSystem& getInstance()
+		{
+			static RenderSystem* instance = new RenderSystem();
+			return *instance;
+		}
+
+		static RenderSystem& getInstance();
 		void createWindow();
 		void Render();
-		void Draw();
+		void Draw(TexturedRectangle* sprite);
 	private:
 		int screenX = 1280;
 		int screenY = 720;

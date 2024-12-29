@@ -1,5 +1,7 @@
 #pragma once
 #include "RenderSystem.h"
+#include "TexturedRectangle.h"
+//#include "RenderSystem.h"
 
 namespace Bolt
 {
@@ -14,7 +16,9 @@ namespace Bolt
 		void Render();
 
 	private:
-
+		TexturedRectangle* sprite;
+		SDL_Renderer* renderer;
+		//RenderSystem* renderSystem;
 
 	};
 
