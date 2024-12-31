@@ -4,6 +4,7 @@
 
 #include "Application.h"
 #include <iostream>
+#include "KeyCodes.h"
 
 // ENTRY POINT ----------------
 #include "EntryPoint.h"

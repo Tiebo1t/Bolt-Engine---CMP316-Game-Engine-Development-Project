@@ -18,6 +18,10 @@ namespace Bolt
 	void Application::Run()
 	{
 
+		//IMGUI_CHECKVERSION();
+		//ImGUI::CreateContext();
+		//ImGuiIO& io = ImGUI::GetIO(); (void)io;
+
 		renderSystem->createWindow();
 		running = true;
 
@@ -35,7 +39,7 @@ namespace Bolt
 				}
 				if (event.key.down)
 				{
-					if (event.key.key == SDLK_0) // https://www.youtube.com/watch?v=EBHmMmiVtCk&list=PLvv0ScY6vfd-p1gSnbQhY7vMe2rng0IL0&index=11 accessed: 27/12/24
+					if (event.key.key == BOLT_0) // https://www.youtube.com/watch?v=EBHmMmiVtCk&list=PLvv0ScY6vfd-p1gSnbQhY7vMe2rng0IL0&index=11 accessed: 27/12/24
 					{
 						std::cout << "0 was pressed" << std::endl;
 					}

@@ -66,6 +66,9 @@
     <ClInclude Include="SpriteComp.h">
       <Filter>src\Components</Filter>
     </ClInclude>
+    <ClInclude Include="KeyCodes.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -100,6 +103,9 @@
     </ClCompile>
     <ClCompile Include="SpriteComp.cpp">
       <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyCodes.cpp">
+      <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
