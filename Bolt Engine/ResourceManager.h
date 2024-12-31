@@ -5,7 +5,7 @@
 
 namespace Bolt
 {
-
+	// Resource manager based off of Mike Shah's SDL resource manager implementation here: https://www.youtube.com/watch?v=_DGIRmHUtwQ
 	class ResourceManager
 	{
 	private:

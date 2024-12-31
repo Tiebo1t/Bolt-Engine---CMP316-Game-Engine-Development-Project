@@ -31,6 +31,11 @@ namespace Bolt
 
 		while (running) {
 
+			for (Layer* layer : layerstack)
+			{
+				layer->OnUpdate();
+			}
+
 			while (SDL_PollEvent(&event)) // https://www.youtube.com/watch?v=FwRfH2bA48M&list=PLvv0ScY6vfd-p1gSnbQhY7vMe2rng0IL0&index=10 accessed: 27/12/24
 			{
 				if (event.type == SDL_EVENT_QUIT)
@@ -56,6 +61,11 @@ namespace Bolt
 		renderSystem->Render();
 
 		world->Render();
+	}
+
+	void Application::PushLayer(Layer* layer)
+	{
+		layerstack.PushLayer(layer);
 	}
 
 }

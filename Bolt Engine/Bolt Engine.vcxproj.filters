@@ -30,9 +30,6 @@
     <ClInclude Include="Core.h">
       <Filter>src\Bolt</Filter>
     </ClInclude>
-    <ClInclude Include="Bolt.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="EntryPoint.h">
       <Filter>src\Bolt</Filter>
     </ClInclude>
@@ -68,6 +65,15 @@
     </ClInclude>
     <ClInclude Include="KeyCodes.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Layer.h">
+      <Filter>src\Bolt</Filter>
+    </ClInclude>
+    <ClInclude Include="Bolt.h">
+      <Filter>src\Bolt</Filter>
+    </ClInclude>
+    <ClInclude Include="LayerStack.h">
+      <Filter>src\Bolt</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -106,6 +112,12 @@
     </ClCompile>
     <ClCompile Include="KeyCodes.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Layer.cpp">
+      <Filter>src\Bolt</Filter>
+    </ClCompile>
+    <ClCompile Include="LayerStack.cpp">
+      <Filter>src\Bolt</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

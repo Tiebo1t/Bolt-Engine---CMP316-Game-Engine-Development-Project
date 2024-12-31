@@ -146,6 +146,8 @@
     <ClCompile Include="DeltaTime.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="KeyCodes.cpp" />
+    <ClCompile Include="Layer.cpp" />
+    <ClCompile Include="LayerStack.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="SpriteComp.cpp" />
     <ClCompile Include="StackAllocator.cpp" />
@@ -163,6 +165,8 @@
     <ClInclude Include="EntryPoint.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="KeyCodes.h" />
+    <ClInclude Include="Layer.h" />
+    <ClInclude Include="LayerStack.h" />
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="SpriteComp.h" />
     <ClInclude Include="StackAllocator.h" />
