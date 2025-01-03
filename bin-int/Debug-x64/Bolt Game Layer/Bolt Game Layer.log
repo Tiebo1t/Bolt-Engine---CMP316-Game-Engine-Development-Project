@@ -15,10 +15,10 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.3193
           [
               _Ty=Bolt::Layer *
           ]
-C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Engine\Application.h(28,26): warning C4251: 'Bolt::Application::world': class 'std::unique_ptr<Bolt::World,std::default_delete<Bolt::World>>' needs to have dll-interface to be used by clients of class 'Bolt::Application'
-C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Engine\Application.h(28,8): message : see declaration of 'std::unique_ptr<Bolt::World,std::default_delete<Bolt::World>>'
-C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Engine\Application.h(29,27): warning C4251: 'Bolt::Application::world2': class 'std::unique_ptr<Bolt::World2,std::default_delete<Bolt::World2>>' needs to have dll-interface to be used by clients of class 'Bolt::Application'
-C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Engine\Application.h(29,8): message : see declaration of 'std::unique_ptr<Bolt::World2,std::default_delete<Bolt::World2>>'
-C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Game Layer\GameLayer.cpp(38,26): warning C4273: 'Bolt::CreateApplication': inconsistent dll linkage
-C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Engine\Application.h(44,31): message : see previous definition of 'CreateApplication'
+C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Engine\Application.h(29,26): warning C4251: 'Bolt::Application::world': class 'std::unique_ptr<Bolt::World,std::default_delete<Bolt::World>>' needs to have dll-interface to be used by clients of class 'Bolt::Application'
+C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Engine\Application.h(29,8): message : see declaration of 'std::unique_ptr<Bolt::World,std::default_delete<Bolt::World>>'
+C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Engine\Application.h(30,27): warning C4251: 'Bolt::Application::world2': class 'std::unique_ptr<Bolt::World2,std::default_delete<Bolt::World2>>' needs to have dll-interface to be used by clients of class 'Bolt::Application'
+C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Engine\Application.h(30,8): message : see declaration of 'std::unique_ptr<Bolt::World2,std::default_delete<Bolt::World2>>'
+C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Game Layer\GameLayer.cpp(43,26): warning C4273: 'Bolt::CreateApplication': inconsistent dll linkage
+C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Engine\Application.h(45,31): message : see previous definition of 'CreateApplication'
   Bolt Game Layer.vcxproj -> C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\bin\Debug-x64\Bolt Game Layer\Bolt Game Layer.exe

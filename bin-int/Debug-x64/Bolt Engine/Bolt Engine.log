@@ -1,27 +1,5 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-  Application.cpp
-C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Engine\KeyCodes.h(13,1): warning C4005: 'SDL_SCANCODE_TO_KEYCODE': macro redefinition
-C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Engine\libraries\SDL-main\include\SDL3\SDL_keycode.h(50,1): message : see previous definition of 'SDL_SCANCODE_TO_KEYCODE'
-C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Engine\LayerStack.h(20,23): warning C4251: 'Bolt::LayerStack::layers': class 'std::vector<Bolt::Layer *,std::allocator<Bolt::Layer *>>' needs to have dll-interface to be used by clients of class 'Bolt::LayerStack'
-C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Engine\LayerStack.h(17,8): message : see declaration of 'std::vector<Bolt::Layer *,std::allocator<Bolt::Layer *>>'
-C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Engine\LayerStack.h(21,33): warning C4251: 'Bolt::LayerStack::layerInsert': class 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>' needs to have dll-interface to be used by clients of class 'Bolt::LayerStack'
-          with
-          [
-              _Ty=Bolt::Layer *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\vector(668,36): message : see declaration of 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>'
-          with
-          [
-              _Ty=Bolt::Layer *
-          ]
-C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Engine\Application.h(28,26): warning C4251: 'Bolt::Application::world': class 'std::unique_ptr<Bolt::World,std::default_delete<Bolt::World>>' needs to have dll-interface to be used by clients of class 'Bolt::Application'
-C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Engine\Application.h(28,8): message : see declaration of 'std::unique_ptr<Bolt::World,std::default_delete<Bolt::World>>'
-C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Engine\Application.h(29,27): warning C4251: 'Bolt::Application::world2': class 'std::unique_ptr<Bolt::World2,std::default_delete<Bolt::World2>>' needs to have dll-interface to be used by clients of class 'Bolt::Application'
-C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Engine\Application.h(29,8): message : see declaration of 'std::unique_ptr<Bolt::World2,std::default_delete<Bolt::World2>>'
-  World.cpp
-  Generating Code...
-C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\Bolt Engine\GameObject.h(64): warning C4715: 'Bolt::GameObject::GetComponent<Bolt::SpriteComp>': not all control paths return a value
-  LINK : C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\bin\Debug-x64\Bolt Engine\Bolt Engine.dll not found or not built by the last incremental link; performing full link
+  WorldTemplate.cpp
      Creating library C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\bin\Debug-x64\Bolt Engine\Bolt Engine.lib and object C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\bin\Debug-x64\Bolt Engine\Bolt Engine.exp
   Bolt Engine.vcxproj -> C:\Users\thoma\Documents\Uni\Year 3\CMP316\Bolt-Engine---CMP316-Game-Engine-Development-Project\bin\Debug-x64\Bolt Engine\Bolt Engine.dll

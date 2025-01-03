@@ -73,7 +73,7 @@ void Bolt::RenderSystem::Draw(TexturedRectangle* sprite, SDL_Renderer*& renderer
 	SDL_RenderPresent(renderer);
 }
 
-//SDL_Renderer* Bolt::RenderSystem::getRenderer()
-//{
-//	return renderer;
-//}
+void Bolt::RenderSystem::Clear(SDL_Renderer*& renderer)
+{
+	SDL_RenderClear(renderer);
+}

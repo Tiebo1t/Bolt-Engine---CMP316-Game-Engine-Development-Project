@@ -24,6 +24,12 @@ void Bolt::SpriteComp::Render(SDL_Renderer*& renderer)
 	//renderSystem->Draw(sprite);
 }
 
+void Bolt::SpriteComp::Clear(SDL_Renderer*& renderer)
+{
+	RenderSystem::getInstance().Clear(renderer);
+}
+
 void Bolt::SpriteComp::Update()
 {
+	std::cout << "Sprites updating" << std::endl;
 }

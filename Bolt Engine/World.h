@@ -2,20 +2,22 @@
 #include "GameObject.h"
 #include "Components.h"
 #include "SpriteComp.h"
+#include "WorldTemplate.h"
 
 namespace Bolt
 {
-	class World
+	class World : public WorldTemplate
 	{
 	public:
 		World();
 		~World();
-		void Load();
-		void Start(SDL_Renderer*& renderer);
-		void Render(SDL_Renderer*& renderer);
-		void Update();
-		void AddGameObject(GameObject* go);
-		GameObject* CreateNewGameObject();
+		void Load() override;
+		void Start(SDL_Renderer*& renderer) override;
+		void Render(SDL_Renderer*& renderer) override;
+		void Update() override;
+		void AddGameObject(GameObject* go) override;
+		void Clear(SDL_Renderer*& renderer) override;
+		GameObject* CreateNewGameObject() override;
 
 	private:
 		std::vector<GameObject*> gameObjects;

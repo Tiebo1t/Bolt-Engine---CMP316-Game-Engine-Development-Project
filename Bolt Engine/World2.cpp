@@ -66,6 +66,16 @@ void Bolt::World2::AddGameObject(GameObject* gameObject)
 	gameObjects.push_back(gameObject);
 }
 
+void Bolt::World2::Clear(SDL_Renderer*& renderer)
+{
+	for (auto& GO : gameObjects) {
+		SpriteComp* sprite = GO->GetComponent<SpriteComp>();
+		if (sprite != nullptr) {
+			sprite->Clear(renderer);
+		}
+	}
+}
+
 Bolt::GameObject* Bolt::World2::CreateNewGameObject()
 {
 	GameObject* gameObject = new GameObject();

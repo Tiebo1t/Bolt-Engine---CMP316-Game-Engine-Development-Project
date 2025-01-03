@@ -149,6 +149,7 @@
     <ClCompile Include="Layer.cpp" />
     <ClCompile Include="LayerStack.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SpriteComp.cpp" />
     <ClCompile Include="StackAllocator.cpp" />
     <ClCompile Include="TexturedRectangle.cpp" />
@@ -156,6 +157,7 @@
     <ClCompile Include="RenderSystem.cpp" />
     <ClCompile Include="World.cpp" />
     <ClCompile Include="World2.cpp" />
+    <ClCompile Include="WorldTemplate.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
@@ -169,6 +171,7 @@
     <ClInclude Include="Layer.h" />
     <ClInclude Include="LayerStack.h" />
     <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SpriteComp.h" />
     <ClInclude Include="StackAllocator.h" />
     <ClInclude Include="TexturedRectangle.h" />
@@ -176,6 +179,7 @@
     <ClInclude Include="RenderSystem.h" />
     <ClInclude Include="World.h" />
     <ClInclude Include="World2.h" />
+    <ClInclude Include="WorldTemplate.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

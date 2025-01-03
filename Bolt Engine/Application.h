@@ -9,6 +9,7 @@
 #include "KeyCodes.h"
 #include "Layer.h"
 #include "LayerStack.h"
+//#include "SceneManager.h"
 
 namespace Bolt
 {
@@ -21,10 +22,12 @@ namespace Bolt
 
 		void Run();
 		void Render();
+		void Update();
 		void PushLayer(Layer* layer);
 
 	private:
 		RenderSystem* renderSystem;
+		//SceneManager* sceneManager;
 		std::unique_ptr<World> world;
 		std::unique_ptr<World2> world2;
 		SDL_Event event;

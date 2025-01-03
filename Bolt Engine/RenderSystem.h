@@ -22,8 +22,8 @@ namespace Bolt
 
 		void createWindow();
 		void Render(SDL_Renderer*& renderer);
-		SDL_Renderer* getRenderer();
 		void Draw(TexturedRectangle* sprite, SDL_Renderer*& renderer);
+		void Clear(SDL_Renderer*& renderer);
 	private:
 		int screenX = 1280;
 		int screenY = 720;

@@ -9,6 +9,7 @@ namespace Bolt
 	{
 		std::cout << "construct";
 		renderSystem = new RenderSystem();
+		//sceneManager = new SceneManager();
 	}
 
 	Application::~Application()
@@ -61,8 +62,7 @@ namespace Bolt
 					{
 						std::cout << "0 was pressed, new level loaded" << std::endl;
 
-						// Need to delete all of world1 stuff 
-
+						world->Clear(renderer);
 						world2 = std::make_unique<World2>();
 						world2->Load();
 						world2->Start(renderer);
@@ -72,16 +72,33 @@ namespace Bolt
 				}
 			}
 
+		Update();
 		Render();
 		}
 	}
 
 	void Application::Render()
 	{
+		if (levelChange == false)
+		{
+			world->Render(renderer);
+		}
+		else
+		{
+			world2->Render(renderer);
+		}
+	}
 
-		if (levelChange == false) world->Render(renderer);
-		else world2->Render(renderer);
-
+	void Application::Update()
+	{
+		if (levelChange == false)
+		{
+			world->Update();
+		}
+		else
+		{
+			world2->Update();
+		}
 	}
 
 	void Application::PushLayer(Layer* layer)
