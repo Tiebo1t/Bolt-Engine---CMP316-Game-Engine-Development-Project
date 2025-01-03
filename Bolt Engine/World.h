@@ -20,6 +20,12 @@ namespace Bolt
 	private:
 		std::vector<GameObject*> gameObjects;
 		GameObject* character;
+		GameObject* character2;
+
+		int posx[2];
+		int posy[2];
+		int heightx[2];
+		int heighty[2];
 	};
 
 }

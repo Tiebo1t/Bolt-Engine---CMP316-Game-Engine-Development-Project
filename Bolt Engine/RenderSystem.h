@@ -28,15 +28,15 @@ namespace Bolt
 		int screenX = 1280;
 		int screenY = 720;
 
-		SDL_Renderer* renderer;
+		//SDL_Renderer* renderer;
 		SDL_Window* mainWindow;
-		SDL_FRect* rect;
-		SDL_Surface* screen;
-		SDL_Surface* image;
-		SDL_Texture* texture;
-		TexturedRectangle* texturedRect;
-		TexturedRectangle* texturedRect2;
-		TexturedRectangle* texturedRect3;
+		//SDL_FRect* rect;
+		//SDL_Surface* screen;
+		//SDL_Surface* image;
+		//SDL_Texture* texture;
+		//TexturedRectangle* texturedRect;
+		//TexturedRectangle* texturedRect2;
+		//TexturedRectangle* texturedRect3;
 		DeltaTime* deltaTime;
 	};
 }

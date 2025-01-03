@@ -8,8 +8,8 @@ Bolt::RenderSystem::RenderSystem(SDL_Renderer*& renderer)
 {
 	std::cout << "Construct";
 
-	texturedRect = new TexturedRectangle(renderer, "images/good.bmp");
-	texturedRect->setRectangleProperties(50, 50, 50, 50);
+	//texturedRect = new TexturedRectangle(renderer, "images/good.bmp");
+	//texturedRect->setRectangleProperties(50, 50, 50, 50);
 
 	//texturedRect2 = new TexturedRectangle(renderer, "images/good.bmp");
 	//texturedRect2->setRectangleProperties(1280 / 2, 720 / 2, 50, 50);
@@ -64,16 +64,16 @@ void Bolt::RenderSystem::Render(SDL_Renderer*& renderer)
 void Bolt::RenderSystem::Draw(TexturedRectangle* sprite, SDL_Renderer*& renderer) // Used to render all sprite components
 {
 
-	SDL_RenderClear(renderer); // Clears when draw is called
+	//SDL_RenderClear(renderer); // Clears when draw is called
 
-	sprite->Render(renderer); // FInd a way to put into render in renderSystem or similar
+	sprite->Render(renderer); 
 
-	SDL_UpdateWindowSurface(mainWindow);
+	//SDL_UpdateWindowSurface(mainWindow);
 
 	SDL_RenderPresent(renderer);
 }
 
-SDL_Renderer* Bolt::RenderSystem::getRenderer()
-{
-	return renderer;
-}
+//SDL_Renderer* Bolt::RenderSystem::getRenderer()
+//{
+//	return renderer;
+//}

@@ -5,6 +5,7 @@
 #include "imgui_impl_sdl3.h"
 #include "imgui_impl_sdlrenderer3.h"
 #include "World.h"
+#include "World2.h"
 #include "KeyCodes.h"
 #include "Layer.h"
 #include "LayerStack.h"
@@ -25,8 +26,10 @@ namespace Bolt
 	private:
 		RenderSystem* renderSystem;
 		std::unique_ptr<World> world;
+		std::unique_ptr<World2> world2;
 		SDL_Event event;
 		bool running;
+		bool levelChange;
 		LayerStack layerstack;
 
 		int screenX = 1280;

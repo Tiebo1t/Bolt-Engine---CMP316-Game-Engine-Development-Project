@@ -20,7 +20,6 @@ void Bolt::SpriteComp::Start(SDL_Renderer*& renderer, int posx, int posy, int he
 void Bolt::SpriteComp::Render(SDL_Renderer*& renderer)
 {
 	// Call a draw function created in the render system
-	std::cout << "Sprite is rendering" << std::endl;
 	RenderSystem::getInstance().Draw(sprite, renderer);
 	//renderSystem->Draw(sprite);
 }

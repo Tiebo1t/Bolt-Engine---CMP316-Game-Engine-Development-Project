@@ -12,14 +12,32 @@ void Bolt::World::Load()
 {
 	character = CreateNewGameObject();
 	character->AddComponent<SpriteComp>();
+
+	character2 = CreateNewGameObject();
+	character2->AddComponent<SpriteComp>();
+
+	// Initialising height positions and sizes for sprites
+	posx[0] = 1280 / 2;
+	posy[0] = 720 / 2;
+	heightx[0] = 50;
+	heighty[0] = 50;
+
+	posx[1] = 500 / 2;
+	posy[1] = 500 / 2;
+	heightx[1] = 50;
+	heighty[1] = 50;
 }
 
 void Bolt::World::Start(SDL_Renderer*& renderer)
 {
+	int i = 0;
 	for (auto& GO : gameObjects) {
 		SpriteComp* sprite = GO->GetComponent<SpriteComp>();
 		if (sprite != nullptr) {
-			sprite->Start(renderer, 1280 / 2, 720 / 2, 50, 50);
+			sprite->Start(renderer, posx[i], posy[i], heightx[i], heighty[i]);
+
+			if (i == gameObjects.size()) i = 0;
+			i++;
 		}
 	}
 }

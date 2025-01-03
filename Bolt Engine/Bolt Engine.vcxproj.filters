@@ -75,6 +75,9 @@
     <ClInclude Include="LayerStack.h">
       <Filter>src\Bolt</Filter>
     </ClInclude>
+    <ClInclude Include="World2.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -118,6 +121,9 @@
     </ClCompile>
     <ClCompile Include="LayerStack.cpp">
       <Filter>src\Bolt</Filter>
+    </ClCompile>
+    <ClCompile Include="World2.cpp">
+      <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

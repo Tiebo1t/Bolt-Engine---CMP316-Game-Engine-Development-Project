@@ -34,10 +34,9 @@ namespace Bolt
 		}
 
 		running = true;
+		levelChange = false;
 
 		world = std::make_unique<World>();
-
-		
 		world->Load();
 		world->Start(renderer);
 
@@ -47,7 +46,7 @@ namespace Bolt
 
 			for (Layer* layer : layerstack)
 			{
-				layer->OnUpdate(); // Currently not working may come back to if have time --------------------------
+				layer->OnUpdate();
 			}
 
 			while (SDL_PollEvent(&event)) // https://www.youtube.com/watch?v=FwRfH2bA48M&list=PLvv0ScY6vfd-p1gSnbQhY7vMe2rng0IL0&index=10 accessed: 27/12/24
@@ -60,7 +59,15 @@ namespace Bolt
 				{
 					if (event.key.key == BOLT_0) // https://www.youtube.com/watch?v=EBHmMmiVtCk&list=PLvv0ScY6vfd-p1gSnbQhY7vMe2rng0IL0&index=11 accessed: 27/12/24
 					{
-						std::cout << "0 was pressed" << std::endl;
+						std::cout << "0 was pressed, new level loaded" << std::endl;
+
+						// Need to delete all of world1 stuff 
+
+						world2 = std::make_unique<World2>();
+						world2->Load();
+						world2->Start(renderer);
+
+						levelChange = true;
 					}
 				}
 			}
@@ -71,9 +78,10 @@ namespace Bolt
 
 	void Application::Render()
 	{
-		renderSystem->Render(renderer);
 
-		world->Render(renderer);
+		if (levelChange == false) world->Render(renderer);
+		else world2->Render(renderer);
+
 	}
 
 	void Application::PushLayer(Layer* layer)
