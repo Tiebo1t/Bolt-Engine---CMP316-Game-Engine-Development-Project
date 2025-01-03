@@ -1,4 +1,5 @@
 #pragma once
+#include "SDL3/SDL.h"
 
 namespace Bolt
 {
@@ -9,7 +10,7 @@ namespace Bolt
 	public:
 		Components(GameObject* owner);
 		virtual ~Components();
-		virtual void Start();
+		virtual void Start(SDL_Renderer*& renderer, int posx, int posy, int heightx, int heighy);
 		virtual void Update();
 		virtual void Render();
 

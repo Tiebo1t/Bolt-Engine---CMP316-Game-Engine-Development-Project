@@ -11,6 +11,7 @@ namespace Bolt
 
 	public:
 		RenderSystem();
+		RenderSystem(SDL_Renderer*& renderer);
 		~RenderSystem();
 
 		static RenderSystem& getInstance()
@@ -20,8 +21,9 @@ namespace Bolt
 		}
 
 		void createWindow();
-		void Render();
-		void Draw(TexturedRectangle* sprite);
+		void Render(SDL_Renderer*& renderer);
+		SDL_Renderer* getRenderer();
+		void Draw(TexturedRectangle* sprite, SDL_Renderer*& renderer);
 	private:
 		int screenX = 1280;
 		int screenY = 720;

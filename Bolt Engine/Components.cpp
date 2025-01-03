@@ -8,7 +8,7 @@ Bolt::Components::~Components()
 {
 }
 
-void Bolt::Components::Start()
+void Bolt::Components::Start(SDL_Renderer*& renderer, int posx, int posy, int heightx, int heighy)
 {
 }
 

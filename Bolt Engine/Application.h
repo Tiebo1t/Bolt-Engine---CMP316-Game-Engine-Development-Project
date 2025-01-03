@@ -28,6 +28,13 @@ namespace Bolt
 		SDL_Event event;
 		bool running;
 		LayerStack layerstack;
+
+		int screenX = 1280;
+		int screenY = 720;
+
+		SDL_Renderer* renderer;
+		SDL_Window* mainWindow;
+		SDL_Surface* screen;
 	};
 
 	// Will be defined in client

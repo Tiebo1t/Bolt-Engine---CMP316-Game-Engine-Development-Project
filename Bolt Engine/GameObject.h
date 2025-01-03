@@ -63,7 +63,7 @@ namespace Bolt
 
 		}
 
-		void Start();
+		void Start(SDL_Renderer*& renderer, int posx, int posy, int heightx, int heighy);
 		void Update();
 		void Render();
 

@@ -11,13 +11,12 @@ namespace Bolt
 	public:
 		SpriteComp(GameObject* owner);
 		virtual ~SpriteComp();
-		void Start() override;
+		void Start(SDL_Renderer*& renderer, int posx, int posy, int heightx, int heighy) override;
 		void Update() override;
-		void Render();
+		void Render(SDL_Renderer*& renderer);
 
 	private:
 		TexturedRectangle* sprite;
-		SDL_Renderer* renderer;
 
 	};
 

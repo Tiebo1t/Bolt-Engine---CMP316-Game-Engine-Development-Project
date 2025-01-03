@@ -14,13 +14,23 @@ void Bolt::World::Load()
 	character->AddComponent<SpriteComp>();
 }
 
-void Bolt::World::Render()
+void Bolt::World::Start(SDL_Renderer*& renderer)
+{
+	for (auto& GO : gameObjects) {
+		SpriteComp* sprite = GO->GetComponent<SpriteComp>();
+		if (sprite != nullptr) {
+			sprite->Start(renderer, 1280 / 2, 720 / 2, 50, 50);
+		}
+	}
+}
+
+void Bolt::World::Render(SDL_Renderer*& renderer)
 {
 	// Render all game objects with sprite components
 	for (auto& GO : gameObjects) {
 		SpriteComp* sprite = GO->GetComponent<SpriteComp>();
 		if (sprite != nullptr) {
-			sprite->Render();
+			sprite->Render(renderer);
 		}
 	}
 }

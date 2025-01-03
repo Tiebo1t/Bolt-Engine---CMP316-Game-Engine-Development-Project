@@ -4,7 +4,6 @@
 
 class ExampleLayer : public Bolt::Layer
 {
-
 public:
 	ExampleLayer() : Layer() {}
 

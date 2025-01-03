@@ -11,7 +11,8 @@ namespace Bolt
 		World();
 		~World();
 		void Load();
-		void Render();
+		void Start(SDL_Renderer*& renderer);
+		void Render(SDL_Renderer*& renderer);
 		void Update();
 		void AddGameObject(GameObject* go);
 		GameObject* CreateNewGameObject();
