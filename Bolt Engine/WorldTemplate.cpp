@@ -16,7 +16,7 @@ void Bolt::WorldTemplate::Start(SDL_Renderer*& renderer)
 {
 }
 
-void Bolt::WorldTemplate::Render(SDL_Renderer*& renderer)
+void Bolt::WorldTemplate::Render(SDL_Renderer*& renderer, int* spritePos)
 {
 }
 

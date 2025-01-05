@@ -13,6 +13,7 @@ namespace Bolt
 
 		void setRectangleProperties(int x, int y, int w, int h);
 		void Render(SDL_Renderer*& renderer);
+		void UpdatePos(int* spritePos);
 	private:
 		SDL_Texture* tex;
 		SDL_FRect* rect;

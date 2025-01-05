@@ -9,10 +9,10 @@ Bolt::GameObject::~GameObject()
 {
 }
 
-void Bolt::GameObject::Start(SDL_Renderer*& renderer, int posx, int posy, int heightx, int heighy)
+void Bolt::GameObject::Start(SDL_Renderer*& renderer, int posx, int posy, int heightx, int heighy, std::string img)
 {
 	for (auto& c : comps) {
-		c->Start(renderer, posx, posy, heightx, heighy);
+		c->Start(renderer, posx, posy, heightx, heighy, img);
 	}
 }
 

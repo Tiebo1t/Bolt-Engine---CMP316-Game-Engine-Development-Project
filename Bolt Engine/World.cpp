@@ -30,11 +30,15 @@ void Bolt::World::Load()
 
 void Bolt::World::Start(SDL_Renderer*& renderer)
 {
+	std::string img;
+
 	int i = 0;
 	for (auto& GO : gameObjects) {
 		SpriteComp* sprite = GO->GetComponent<SpriteComp>();
 		if (sprite != nullptr) {
-			sprite->Start(renderer, posx[i], posy[i], heightx[i], heighty[i]);
+			if (i == 0) img = "images/coolguy.bmp";
+			else if (i == 1) img = "images/notcoolguy.bmp";
+			sprite->Start(renderer, posx[i], posy[i], heightx[i], heighty[i], img);
 
 			if (i == gameObjects.size()) i = 0;
 			i++;

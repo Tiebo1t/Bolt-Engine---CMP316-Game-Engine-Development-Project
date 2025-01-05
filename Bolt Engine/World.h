@@ -13,7 +13,7 @@ namespace Bolt
 		~World();
 		void Load() override;
 		void Start(SDL_Renderer*& renderer) override;
-		void Render(SDL_Renderer*& renderer) override;
+		void Render(SDL_Renderer*& renderer);
 		void Update() override;
 		void AddGameObject(GameObject* go) override;
 		void Clear(SDL_Renderer*& renderer) override;

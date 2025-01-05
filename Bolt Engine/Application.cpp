@@ -43,8 +43,8 @@ namespace Bolt
 		world = std::make_unique<World>();
 		world2 = std::make_unique<World2>();
 
-		world->Load();
-		world->Start(renderer);
+		gameState.setCurrentState(State::Level1);
+		Load(1);
 
 		screen = SDL_GetWindowSurface(mainWindow);
 
@@ -70,30 +70,55 @@ namespace Bolt
 					{
 						std::cout << "0 was pressed, new level loaded" << std::endl;
 
+						if (gameState.getCurrentState() == State::Level1)
+						{
+							Unload(1);
+							Load(2);
+							gameState.setCurrentState(State::Level2);
+						}
+						else if (gameState.getCurrentState() == State::Level2)
+						{
+							Unload(2);
+							Load(1);
+							gameState.setCurrentState(State::Level1);
+						}
+
 						//world->Clear(renderer);
 						//world2->Load();
 						//world2->Start(renderer);
 
-						if (levelChange == false)
-						{
-							Load(2);
-							Unload(1);
+						//if (levelChange == false)
+						//{
+						//	Load(2);
+						//	Unload(1);
 
-							levelChange = true;
-						}
-						else if (levelChange == true)
-						{
-							Load(1);
-							Unload(2);
+						//	levelChange = true;
+						//}
+						//else if (levelChange == true)
+						//{
+						//	Load(1);
+						//	Unload(2);
 
-							levelChange = false;
-						}
+						//	levelChange = false;
+						//}
 					}
 				}
 			}
 
+			//switch (gameState.getCurrentState())
+			//{
+			//case (State::Level1):
+			//	world->Load();
+			//	world->Start(renderer);
+			//	break;
+			//case (State::Level2):
+			//	world2->Load();
+			//	world2->Start(renderer);
+			//	break;
+			//}
+
 			ImGui_ImplSDLRenderer3_NewFrame();
-			ImGui_ImplSDL3_NewFrame(); // mainwindow may need to be in here
+			ImGui_ImplSDL3_NewFrame(); 
 			ImGui::NewFrame();
 
 			ImGui::Begin("Editor");
@@ -104,12 +129,12 @@ namespace Bolt
 
 			ImGui::Render();
 
-			// SDL_renderclear
+			//SDL_RenderClear(renderer);
+
+			Update(gameState.getCurrentState());
+			Render(gameState.getCurrentState());
 
 			ImGui_ImplSDLRenderer3_RenderDrawData(ImGui::GetDrawData(), renderer);
-
-			Update();
-			Render();
 		}
 
 		ImGui_ImplSDLRenderer3_Shutdown();
@@ -117,54 +142,101 @@ namespace Bolt
 		ImGui::DestroyContext();
 	}
 
-	void Application::Render()
+	void Application::Render(State s)
 	{
-		if (levelChange == false)
+
+		switch (s)
 		{
+		case (State::Level1):
 			world->Render(renderer);
-		}
-		else
-		{
+			break;
+		case (State::Level2):
 			world2->Render(renderer);
+			break;
 		}
+
+		//if (s == State::Level1)
+		//{
+		//	world->Render(renderer, spritePos);
+		//}
+		//else
+		//{
+		//	world2->Render(renderer, spritePos);
+		//}
+
 	}
 
-	void Application::Update()
+	void Application::Update(State s)
 	{
-		if (levelChange == false)
+
+		switch (s)
 		{
+		case (State::Level1):
 			world->Update();
-		}
-		else
-		{
+			break;
+		case (State::Level2):
 			world2->Update();
+			break;
 		}
+
+		//if (s == State::Level1)
+		//{
+		//	world->Update();
+		//}
+		//else
+		//{
+		//	world2->Update();
+		//}
+
 	}
 
 	void Application::Load(int worldNumber)
 	{
-		if (worldNumber == 1)
+
+		switch (worldNumber)
 		{
+		case (1):
 			world->Load();
 			world->Start(renderer);
-		}
-		else if (worldNumber == 2)
-		{
+			break;
+		case(2):
 			world2->Load();
 			world2->Start(renderer);
+			break;
 		}
+
+		//if (worldNumber == 1)
+		//{
+		//	world->Load();
+		//	world->Start(renderer);
+		//}
+		//else if (worldNumber == 2)
+		//{
+		//	world2->Load();
+		//	world2->Start(renderer);
+		//}
 	}
 
 	void Application::Unload(int worldNumber)
 	{
-		if (worldNumber == 1)
+		switch (worldNumber)
 		{
+		case (1):
 			world->Clear(renderer);
-		}
-		else if (worldNumber == 2)
-		{
+			break;
+		case(2):
 			world2->Clear(renderer);
+			break;
 		}
+
+		//if (worldNumber == 1)
+		//{
+		//	world->Clear(renderer);
+		//}
+		//else if (worldNumber == 2)
+		//{
+		//	world2->Clear(renderer);
+		//}
 	}
 
 	void Application::PushLayer(Layer* layer)

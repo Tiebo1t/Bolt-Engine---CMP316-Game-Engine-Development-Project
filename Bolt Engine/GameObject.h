@@ -63,7 +63,7 @@ namespace Bolt
 
 		}
 
-		void Start(SDL_Renderer*& renderer, int posx, int posy, int heightx, int heighy);
+		void Start(SDL_Renderer*& renderer, int posx, int posy, int heightx, int heighy, std::string img);
 		void Update();
 		void Render();
 

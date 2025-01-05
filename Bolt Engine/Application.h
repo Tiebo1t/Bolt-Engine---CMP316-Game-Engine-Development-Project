@@ -12,7 +12,7 @@
 #include "KeyCodes.h"
 #include "Layer.h"
 #include "LayerStack.h"
-//#include "SceneManager.h"
+#include "GameState.h"
 
 namespace Bolt
 {
@@ -24,11 +24,13 @@ namespace Bolt
 		virtual ~Application();
 
 		void Run();
-		void Render();
-		void Update();
+		void Render(State s);
+		void Update(State s);
 		void Load(int worldNumber);
 		void Unload(int worldNumber);
 		void PushLayer(Layer* layer);
+
+		enum class GameStates {Level1, Level2};
 
 	private:
 		RenderSystem* renderSystem;
@@ -39,6 +41,7 @@ namespace Bolt
 		bool running;
 		bool levelChange;
 		LayerStack layerstack;
+		GameState gameState;
 
 		int screenX = 1280;
 		int screenY = 720;

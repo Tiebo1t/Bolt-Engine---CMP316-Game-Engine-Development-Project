@@ -146,6 +146,7 @@
     <ClCompile Include="Components.cpp" />
     <ClCompile Include="DeltaTime.cpp" />
     <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameState.cpp" />
     <ClCompile Include="imgui\imgui.cpp" />
     <ClCompile Include="imgui\imgui_demo.cpp" />
     <ClCompile Include="imgui\imgui_draw.cpp" />
@@ -175,6 +176,7 @@
     <ClInclude Include="DeltaTime.h" />
     <ClInclude Include="EntryPoint.h" />
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameState.h" />
     <ClInclude Include="KeyCodes.h" />
     <ClInclude Include="Layer.h" />
     <ClInclude Include="LayerStack.h" />

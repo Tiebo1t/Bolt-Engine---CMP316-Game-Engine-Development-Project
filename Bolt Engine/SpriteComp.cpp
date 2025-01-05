@@ -9,11 +9,11 @@ Bolt::SpriteComp::~SpriteComp()
 {
 }
 
-void Bolt::SpriteComp::Start(SDL_Renderer*& renderer, int posx, int posy, int heightx, int heighty)
+void Bolt::SpriteComp::Start(SDL_Renderer*& renderer, int posx, int posy, int heightx, int heighty, std::string spriteTex)
 {
 	// Create an instance of textured rectangle
 	//SDL_Renderer* renderer = RenderSystem::getInstance().getRenderer();
-	sprite = new TexturedRectangle(renderer, "images/good.bmp"); // Image not loaded due to null renderer
+	sprite = new TexturedRectangle(renderer, spriteTex); // "images/good.bmp"
 	sprite->setRectangleProperties(posx, posy, heightx, heighty); // Change to a transform component if have time
 }
 
