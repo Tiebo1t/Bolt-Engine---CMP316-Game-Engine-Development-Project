@@ -15,7 +15,7 @@ namespace Bolt
 		// Functions
 		void setRectangleProperties(int x, int y, int w, int h);
 		void Render(SDL_Renderer*& renderer);
-		void UpdatePos();
+		void UpdatePos(int* spritex);
 	private:
 		// Variables for storing images and creating rectangle
 		SDL_Texture* tex;

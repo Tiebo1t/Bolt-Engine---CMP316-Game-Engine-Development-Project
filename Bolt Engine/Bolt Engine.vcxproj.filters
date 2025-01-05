@@ -22,6 +22,9 @@
     <Filter Include="src\Objects">
       <UniqueIdentifier>{768e4c59-198f-486c-97f2-dc7d56e3ac47}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\ImGui">
+      <UniqueIdentifier>{e457863f-2df9-4188-a193-4e5a9d7dabae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h">
@@ -158,29 +161,29 @@
     <ClCompile Include="WorldTemplate.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="imgui\imgui.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\imgui_demo.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\imgui_draw.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\imgui_impl_sdl3.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\imgui_impl_sdlrenderer3.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\imgui_tables.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\imgui_widgets.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="GameState.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>src\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>src\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>src\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_sdl3.cpp">
+      <Filter>src\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_sdlrenderer3.cpp">
+      <Filter>src\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_tables.cpp">
+      <Filter>src\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>src\ImGui</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

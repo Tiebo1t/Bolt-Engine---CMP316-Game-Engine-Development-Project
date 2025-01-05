@@ -48,6 +48,9 @@ namespace Bolt
 		int screenX = 1280;
 		int screenY = 720;
 
+		// Variable for editing sprite position in the x, to be used with imgui
+		int spritePosX = 10;
+
 		SDL_Renderer* renderer;
 		SDL_Window* mainWindow;
 		SDL_Surface* screen;

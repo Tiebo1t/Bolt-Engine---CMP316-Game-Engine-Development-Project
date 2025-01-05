@@ -22,6 +22,13 @@ void Bolt::SpriteComp::Render(SDL_Renderer*& renderer)
 	RenderSystem::getInstance().Draw(sprite, renderer); 
 }
 
+void Bolt::SpriteComp::Render(SDL_Renderer*& renderer, int* spritex) // Overloaded function allowing imgui slider to be used to update the x position of sprite 1 in world 1.
+{
+	// Call a draw function from the render system
+	sprite->UpdatePos(spritex); // Changes the x position of sprite 1 in world 1 with imgui slider
+	RenderSystem::getInstance().Draw(sprite, renderer);
+}
+
 void Bolt::SpriteComp::Clear(SDL_Renderer*& renderer)
 {
 	// Calls a clear function in the render system
@@ -30,5 +37,5 @@ void Bolt::SpriteComp::Clear(SDL_Renderer*& renderer)
 
 void Bolt::SpriteComp::Update()
 {
-	std::cout << "Sprites updating" << std::endl;
+
 }

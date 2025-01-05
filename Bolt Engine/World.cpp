@@ -50,13 +50,19 @@ void Bolt::World::Start(SDL_Renderer*& renderer)
 	}
 }
 
-void Bolt::World::Render(SDL_Renderer*& renderer)
+void Bolt::World::Render(SDL_Renderer*& renderer, int* spritex)
 {
 	// Render all game objects with sprite components
+	int i = 0;
 	for (auto& GO : gameObjects) {
 		SpriteComp* sprite = GO->GetComponent<SpriteComp>();
 		if (sprite != nullptr) {
 			sprite->Render(renderer);
+
+			if (i == 1) sprite->Render(renderer, spritex); // Renders sprite with changeable x value
+
+			if (i == gameObjects.size()) i = 0; // Resets i if it reaches the end of all gameobjects
+			i++;
 		}
 	}
 }

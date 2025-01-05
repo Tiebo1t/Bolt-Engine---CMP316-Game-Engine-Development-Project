@@ -9,7 +9,6 @@ namespace Bolt
 	{
 		std::cout << "construct"; // Creates a new instance of the render system on construction of the application
 		renderSystem = new RenderSystem();
-		//sceneManager = new SceneManager();
 	}
 
 	Application::~Application()
@@ -90,22 +89,29 @@ namespace Bolt
 			ImGui::Begin("Editor"); // Creates the imgui interface with text "editor"
 
 			ImGui::Text("Editor"); 
+			ImGui::SliderInt("Sprite 1: X position", &spritePosX, 0, 1000);
 
 			ImGui::End();
 
 			ImGui::Render(); // Renders the imgui interface
 
-			//SDL_RenderClear(renderer);
+			SDL_RenderClear(renderer); // Clears the renderer
 
 			Update(gameState.getCurrentState()); // Updates and renders the current active level
 			Render(gameState.getCurrentState());
 
 			ImGui_ImplSDLRenderer3_RenderDrawData(ImGui::GetDrawData(), renderer); // Gives imgui draw data from the current frame from the renderer
+
+			SDL_RenderPresent(renderer); // Presents the renderer
 		}
 
 		ImGui_ImplSDLRenderer3_Shutdown(); // Close ImGui and destroy its instance
 		ImGui_ImplSDL3_Shutdown();
 		ImGui::DestroyContext();
+
+		SDL_DestroyWindow(mainWindow);
+		SDL_DestroyRenderer(renderer);
+		SDL_Quit();
 	}
 
 	void Application::Render(State s)
@@ -115,7 +121,7 @@ namespace Bolt
 		switch (s)
 		{
 		case (State::Level1):
-			world->Render(renderer);
+			world->Render(renderer, &spritePosX);
 			break;
 		case (State::Level2):
 			world2->Render(renderer);

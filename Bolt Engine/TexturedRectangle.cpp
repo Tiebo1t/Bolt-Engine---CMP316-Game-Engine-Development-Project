@@ -29,7 +29,7 @@ void Bolt::TexturedRectangle::Render(SDL_Renderer*& renderer)
 	SDL_RenderTexture(renderer, tex, NULL, rect); 
 }
 
-void Bolt::TexturedRectangle::UpdatePos()
+void Bolt::TexturedRectangle::UpdatePos(int* spritex)
 {
-
+	rect->x = *spritex; 
 }
