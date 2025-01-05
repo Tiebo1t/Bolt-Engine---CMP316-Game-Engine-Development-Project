@@ -4,7 +4,7 @@
 
 namespace Bolt
 {
-	// Doesnt work right now
+	// Doesnt work right now ---------------------------
 	class SceneManager
 	{
 	public:

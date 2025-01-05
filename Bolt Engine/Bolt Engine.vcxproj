@@ -74,6 +74,7 @@
     <OutDir>$(SolutionDir)bin\$(Configuration)-$(Platform)\$(ProjectName)</OutDir>
     <IntDir>$(SolutionDir)bin-int\$(Configuration)-$(Platform)\$(ProjectName)</IntDir>
     <TargetName>$(ProjectName)</TargetName>
+    <IncludePath>$(SolutionDir)Bolt Engine\libraries\ImGUI;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -109,7 +110,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>BOLT_BUILD_DLL;BOLT_PLATFORM_WINDOWS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Bolt Engine\libraries\ImGUI;$(SolutionDir)Bolt Engine\libraries\SDL-main\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Bolt Engine\libraries\SDL-main\include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -145,6 +146,13 @@
     <ClCompile Include="Components.cpp" />
     <ClCompile Include="DeltaTime.cpp" />
     <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_demo.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="imgui\imgui_impl_sdl3.cpp" />
+    <ClCompile Include="imgui\imgui_impl_sdlrenderer3.cpp" />
+    <ClCompile Include="imgui\imgui_tables.cpp" />
+    <ClCompile Include="imgui\imgui_widgets.cpp" />
     <ClCompile Include="KeyCodes.cpp" />
     <ClCompile Include="Layer.cpp" />
     <ClCompile Include="LayerStack.cpp" />
@@ -170,6 +178,14 @@
     <ClInclude Include="KeyCodes.h" />
     <ClInclude Include="Layer.h" />
     <ClInclude Include="LayerStack.h" />
+    <ClInclude Include="libraries\ImGUI\imconfig.h" />
+    <ClInclude Include="libraries\ImGUI\imgui.h" />
+    <ClInclude Include="libraries\ImGUI\imgui_impl_sdl3.h" />
+    <ClInclude Include="libraries\ImGUI\imgui_impl_sdlrenderer3.h" />
+    <ClInclude Include="libraries\ImGUI\imgui_internal.h" />
+    <ClInclude Include="libraries\ImGUI\imstb_rectpack.h" />
+    <ClInclude Include="libraries\ImGUI\imstb_textedit.h" />
+    <ClInclude Include="libraries\ImGUI\imstb_truetype.h" />
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SpriteComp.h" />
