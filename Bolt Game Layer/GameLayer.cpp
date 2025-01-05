@@ -5,16 +5,14 @@
 class ExampleLayer : public Bolt::Layer
 {
 public:
-	ExampleLayer() : Layer() {}
+	ExampleLayer() : Layer() {} // This layer doesn't do anything currently
 
 	void OnUpdate() override
 	{
-		// try implementing imgui, if not maybe try audio system
 	}
 
 	void OnEvent(SDL_Event& event) override
 	{
-
 	}
 
 };
@@ -24,7 +22,7 @@ class Game : public Bolt::Application
 public:
 	Game() 
 	{
-		PushLayer(new ExampleLayer()); // Doesnt do anything right now
+		PushLayer(new ExampleLayer()); // Creates a new layer on the layer stack
 	}
 	~Game()
 	{
@@ -44,7 +42,6 @@ Bolt::Application* Bolt::CreateApplication()
 {
 
 	// Creates a new instance of our game layer on heap
-	//return new Bolt_Game_Layer();
 	return new Game();
 
 }

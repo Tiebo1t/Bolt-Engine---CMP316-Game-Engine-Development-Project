@@ -23,6 +23,7 @@ namespace Bolt
 		Application();
 		virtual ~Application();
 
+		// Defining functions
 		void Run();
 		void Render(State s);
 		void Update(State s);
@@ -30,19 +31,20 @@ namespace Bolt
 		void Unload(int worldNumber);
 		void PushLayer(Layer* layer);
 
+		// Sets up levels
 		enum class GameStates {Level1, Level2};
 
 	private:
+		// Defining variables and pointers/instances of classes
 		RenderSystem* renderSystem;
-		//SceneManager* sceneManager;
 		std::unique_ptr<World> world;
 		std::unique_ptr<World2> world2;
 		SDL_Event event;
 		bool running;
-		bool levelChange;
 		LayerStack layerstack;
 		GameState gameState;
 
+		// Defines screen size
 		int screenX = 1280;
 		int screenY = 720;
 
@@ -51,7 +53,7 @@ namespace Bolt
 		SDL_Surface* screen;
 	};
 
-	// Will be defined in client
+	// Application is defined by the client (GameLayer)
 	BOLT_ENGINE_API Application* CreateApplication();
 
 }

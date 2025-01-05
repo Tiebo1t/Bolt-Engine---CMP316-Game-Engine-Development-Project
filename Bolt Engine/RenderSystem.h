@@ -14,29 +14,18 @@ namespace Bolt
 		RenderSystem(SDL_Renderer*& renderer);
 		~RenderSystem();
 
+		// Returns an instance of the render system, and ensures it is only ever created once with the use of static
 		static RenderSystem& getInstance()
 		{
 			static RenderSystem* instance = new RenderSystem();
 			return *instance;
 		}
 
-		void createWindow();
-		void Render(SDL_Renderer*& renderer);
+		// Functions for drawing and clearing sprites from screen
 		void Draw(TexturedRectangle* sprite, SDL_Renderer*& renderer);
 		void Clear(SDL_Renderer*& renderer);
-	private:
-		int screenX = 1280;
-		int screenY = 720;
 
-		//SDL_Renderer* renderer;
-		SDL_Window* mainWindow;
-		//SDL_FRect* rect;
-		//SDL_Surface* screen;
-		//SDL_Surface* image;
-		//SDL_Texture* texture;
-		//TexturedRectangle* texturedRect;
-		//TexturedRectangle* texturedRect2;
-		//TexturedRectangle* texturedRect3;
-		DeltaTime* deltaTime;
+	private:
+
 	};
 }

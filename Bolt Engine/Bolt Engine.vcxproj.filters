@@ -78,9 +78,6 @@
     <ClInclude Include="World2.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="SceneManager.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="WorldTemplate.h">
       <Filter>src</Filter>
     </ClInclude>
@@ -156,9 +153,6 @@
       <Filter>src\Bolt</Filter>
     </ClCompile>
     <ClCompile Include="World2.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneManager.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="WorldTemplate.cpp">

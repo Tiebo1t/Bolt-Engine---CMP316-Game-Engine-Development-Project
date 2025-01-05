@@ -2,6 +2,7 @@
 
 namespace Bolt
 {
+	// Keycodes for checking certain key presses
 	class KeyCodes
 	{
 	};

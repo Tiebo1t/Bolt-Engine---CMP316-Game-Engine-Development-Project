@@ -5,9 +5,11 @@
 
 namespace Bolt
 {
+	// Base abstract class for all created worlds
 	class WorldTemplate
 	{
 	public:
+		// Necessary functions for loading and running worlds
 		WorldTemplate();
 		~WorldTemplate();
 		virtual void Load();

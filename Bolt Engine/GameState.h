@@ -6,6 +6,7 @@
 
 namespace Bolt
 {
+	// Sets up an enum with all levels in the project
 	enum class State { Level1, Level2 };
 
 	class GameState

@@ -10,6 +10,7 @@ Bolt::World2::~World2()
 
 void Bolt::World2::Load()
 {
+	// Setting up all characters in world
 	character = CreateNewGameObject();
 	character->AddComponent<SpriteComp>();
 
@@ -33,14 +34,13 @@ void Bolt::World2::Start(SDL_Renderer*& renderer)
 	std::string img;
 
 	int i = 0;
-	if (i == 0) img = "images/coolguy.bmp";
-	else if (i == 1) img = "images/notcoolguy.bmp";
-	for (auto& GO : gameObjects) {
+	img = "images/coolguy.bmp"; // Assigns image coolguy to both sprites
+	for (auto& GO : gameObjects) { // Loops all gameobjects checking if they have a sprite component
 		SpriteComp* sprite = GO->GetComponent<SpriteComp>();
 		if (sprite != nullptr) {
-			sprite->Start(renderer, posx[i], posy[i], heightx[i], heighty[i], img);
+			sprite->Start(renderer, posx[i], posy[i], heightx[i], heighty[i], img); // Calls start setting up each sprite with their corresponding data
 
-			if (i == gameObjects.size()) i = 0;
+			if (i == gameObjects.size()) i = 0; // Resets i if it reaches the end of all gameobjects
 			i++;
 		}
 	}
@@ -67,11 +67,13 @@ void Bolt::World2::Update()
 
 void Bolt::World2::AddGameObject(GameObject* gameObject)
 {
+	// adds gameobjects to array
 	gameObjects.push_back(gameObject);
 }
 
 void Bolt::World2::Clear(SDL_Renderer*& renderer)
 {
+	// Stops rendering all gameobjects
 	for (auto& GO : gameObjects) {
 		SpriteComp* sprite = GO->GetComponent<SpriteComp>();
 		if (sprite != nullptr) {
@@ -82,6 +84,7 @@ void Bolt::World2::Clear(SDL_Renderer*& renderer)
 
 Bolt::GameObject* Bolt::World2::CreateNewGameObject()
 {
+	// Adds new gameobjects to array
 	GameObject* gameObject = new GameObject();
 	AddGameObject(gameObject);
 	return gameObject;

@@ -9,6 +9,7 @@ namespace Bolt
 	class World2 : public WorldTemplate
 	{
 	public:
+		// Functions inherited from world template to create a new world
 		World2();
 		~World2();
 		void Load() override;
@@ -20,10 +21,12 @@ namespace Bolt
 		GameObject* CreateNewGameObject() override;
 
 	private:
+		// Setting up character gameobjects
 		std::vector<GameObject*> gameObjects;
 		GameObject* character;
 		GameObject* character2;
 
+		// Arrays of data for sizes and positions for sprites
 		int posx[2];
 		int posy[2];
 		int heightx[2];

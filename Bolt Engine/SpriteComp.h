@@ -9,6 +9,7 @@ namespace Bolt
 	class SpriteComp : public Components
 	{
 	public:
+		// Functions and overwritten functions from components base class
 		SpriteComp(GameObject* owner);
 		virtual ~SpriteComp();
 		void Start(SDL_Renderer*& renderer, int posx, int posy, int heightx, int heighy, std::string spriteTex) override;
@@ -17,6 +18,7 @@ namespace Bolt
 		void Clear(SDL_Renderer*& renderer);
 
 	private:
+		// Sprite is a textured rectangle
 		TexturedRectangle* sprite;
 
 	};

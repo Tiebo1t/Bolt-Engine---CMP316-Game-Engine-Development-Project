@@ -12,6 +12,7 @@ namespace Bolt
 		ResourceManager();
 		~ResourceManager();
 
+		// Unordered map for storing all surfaces paired with their corresponding file names
 		std::unordered_map<std::string, SDL_Surface*> surfaces;
 	public:
 		static ResourceManager& getInstance();

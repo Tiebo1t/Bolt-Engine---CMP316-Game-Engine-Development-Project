@@ -158,7 +158,6 @@
     <ClCompile Include="Layer.cpp" />
     <ClCompile Include="LayerStack.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
-    <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SpriteComp.cpp" />
     <ClCompile Include="StackAllocator.cpp" />
     <ClCompile Include="TexturedRectangle.cpp" />
@@ -189,7 +188,6 @@
     <ClInclude Include="libraries\ImGUI\imstb_textedit.h" />
     <ClInclude Include="libraries\ImGUI\imstb_truetype.h" />
     <ClInclude Include="ResourceManager.h" />
-    <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SpriteComp.h" />
     <ClInclude Include="StackAllocator.h" />
     <ClInclude Include="TexturedRectangle.h" />
